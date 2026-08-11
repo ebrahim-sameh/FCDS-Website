@@ -8,6 +8,9 @@ import News from './pages/News/News';
 import NewsDetails from './pages/News/NewsDetails';
 import AboutSection from './pages/About/AboutSection';
 import DeanMessageSection from './pages/DeanMessage/DeanMessageSection';
+import Services from './pages/Services/Services.jsx';
+import Contact from './pages/Contact/Contact.jsx';
+import NotFound from './pages/NotFound/NotFound.jsx';
 
 function App() {
   useEffect(() => {
@@ -27,6 +30,9 @@ function App() {
           <Route path="/dean-message" element={<DeanMessageSection />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:key" element={<NewsDetails />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
