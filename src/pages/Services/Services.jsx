@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
 import Button from '../../components/ui/Button';
@@ -8,32 +8,18 @@ import servicesData from './services';
 const Services = () => {
   const { t, i18n } = useTranslation('services');
   const isArabic = i18n.language === 'ar';
-  const [status, setStatus] = useState('loading');
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(servicesData);
+  const [hasError, setHasError] = useState(false);
 
   const loadServices = () => {
-    setStatus('loading');
-
-    window.setTimeout(() => {
-      try {
-        if (!servicesData.length) {
-          setItems([]);
-          setStatus('empty');
-          return;
-        }
-
-        setItems(servicesData);
-        setStatus('ready');
-      } catch {
-        setItems([]);
-        setStatus('error');
-      }
-    }, 250);
+    try {
+      setHasError(false);
+      setItems(servicesData);
+    } catch {
+      setItems([]);
+      setHasError(true);
+    }
   };
-
-  useEffect(() => {
-    loadServices();
-  }, []);
 
   return (
     <section className="py-5" style={{ backgroundColor: '#f8f9fb' }}>
@@ -44,19 +30,7 @@ const Services = () => {
           subtitle={t('subtitle')}
         />
 
-        {status === 'loading' && (
-          <p className={`text-muted ${isArabic ? 'text-end' : 'text-start'}`}>
-            {t('loading')}
-          </p>
-        )}
-
-        {status === 'empty' && (
-          <p className={`text-muted ${isArabic ? 'text-end' : 'text-start'}`}>
-            {t('empty')}
-          </p>
-        )}
-
-        {status === 'error' && (
+        {hasError && (
           <div className={`d-flex flex-column gap-3 align-items-${isArabic ? 'end' : 'start'}`}>
             <p className="text-danger mb-0">{t('error')}</p>
             <Button variant="outlineDark" onClick={loadServices}>
@@ -65,7 +39,13 @@ const Services = () => {
           </div>
         )}
 
-        {status === 'ready' && (
+        {!hasError && items.length === 0 && (
+          <p className={`text-muted ${isArabic ? 'text-end' : 'text-start'}`}>
+            {t('empty')}
+          </p>
+        )}
+
+        {!hasError && items.length > 0 && (
           <div className="row g-4">
             {items.map((item) => (
               <div key={item.key} className="col-12 col-md-6 col-lg-4">
