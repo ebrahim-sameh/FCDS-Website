@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import NewsCard from './NewsCard';
-import news from './news';
+import news from '../../data/news';
 
 const News = () => {
   const { t, i18n } = useTranslation('news');
