@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Button from '../../components/ui/Button';
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation('home');
@@ -86,27 +86,13 @@ const HeroSection = () => {
                     : 'justify-content-start'
                 }`}
               >
-                <Link
-                  to="/admissions"
-                  className="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold"
-                >
+                <Button to="/admissions" variant="outline">
                   {t('hero.admissionsBtn')}
-                </Link>
+                </Button>
 
-                <Link
-                  to="/departments"
-                  className="btn btn-warning rounded-pill px-4 py-2 fw-semibold d-flex align-items-center gap-2"
-                >
+                <Button to="/departments" variant="primary" icon={<i className={`bi ${isArabic ? 'bi-arrow-left' : 'bi-arrow-right'}`}></i>}>
                   {t('hero.exploreBtn')}
-
-                  <i
-                    className={`bi ${
-                      isArabic
-                        ? 'bi-arrow-left'
-                        : 'bi-arrow-right'
-                    }`}
-                  ></i>
-                </Link>
+                </Button>
               </div>
 
             </div>

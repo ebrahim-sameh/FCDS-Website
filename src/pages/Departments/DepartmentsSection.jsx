@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SectionTitle from '../../components/ui/SectionTitle';
 
 const DepartmentsSection = () => {
   const { t, i18n } = useTranslation('departments');
@@ -50,39 +51,11 @@ const DepartmentsSection = () => {
       <div className="container">
 
         {/* Section Header */}
-        <div className="text-center mb-5">
-          <div
-            className="fw-semibold mb-2"
-            style={{
-              color: '#f59e0b',
-              fontSize: '0.95rem',
-            }}
-          >
-            {t('departmentsSection.label')}
-          </div>
-
-          <h2
-            className="fw-bold mb-3"
-            style={{
-              color: '#111827',
-              fontSize: 'clamp(2rem, 4vw, 2.7rem)',
-            }}
-          >
-            {t('departmentsSection.title')}
-          </h2>
-
-          <p
-            className="mb-0 mx-auto"
-            style={{
-              color: '#64748b',
-              fontSize: '1rem',
-              lineHeight: 1.8,
-              maxWidth: '650px',
-            }}
-          >
-            {t('departmentsSection.description')}
-          </p>
-        </div>
+        <SectionTitle
+          eyebrow={t('departmentsSection.label')}
+          title={t('departmentsSection.title')}
+          subtitle={t('departmentsSection.description')}
+        />
 
         {/* Departments Grid */}
         <div className="row g-4">

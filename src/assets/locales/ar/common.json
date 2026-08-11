@@ -27,5 +27,12 @@
     "mediaAnalytics": "تحليل الوسائط",
     "healthInformatics": "معلوماتية الرعاية الصحية",
     "cyberSecurity": "الأمن السيبراني"
-  }
+  },
+  "quickLinks": {
+  "title": "روابط سريعة",
+  "admissions": "التقديم والقبول",
+  "departments": "الأقسام العلمية",
+  "news": "آخر الأخبار",
+  "contact": "تواصل معنا"
+}
 }
