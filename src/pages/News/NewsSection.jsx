@@ -2,40 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
+import newsData from './news';
 
 const NewsSection = () => {
   const { t, i18n } = useTranslation('news');
   const isArabic = i18n.language === 'ar';
-
-  const news = [
-    {
-      key: 'graduation',
-      image: '/imgs/news-1.png',
-      type: 'event',
-      date: '14 سبتمبر 2026',
-    },
-    {
-      key: 'aiWorkshop',
-      image: '/imgs/news-2.png',
-      type: 'event',
-      date: '2 أبريل 2026',
-    },
-    {
-      key: 'partnership',
-      image: '/imgs/news-3.png',
-      type: 'news',
-      date: '18 مارس 2026',
-    },
-  ];
+  const news = newsData.slice(0, 3);
 
   return (
     <section className="py-5 bg-white">
       <div className="container py-4">
-
-        {/* Header */}
         <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-5">
-
-          {/* Section Header */}
           <SectionTitle
             eyebrow={t('newsSection.label')}
             title={t('newsSection.title')}
@@ -54,17 +31,11 @@ const NewsSection = () => {
               }`}
             ></i>
           </Link>
-
         </div>
 
-        {/* News Cards */}
         <div className="row g-4">
-
           {news.map((item) => (
-            <div
-              key={item.key}
-              className="col-12 col-md-6 col-lg-4"
-            >
+            <div key={item.key} className="col-12 col-md-6 col-lg-4">
               <Link
                 to={`/news/${item.key}`}
                 className="text-decoration-none text-dark"
@@ -87,8 +58,6 @@ const NewsSection = () => {
                     e.currentTarget.style.boxShadow = 'none';
                   }}
                 >
-
-                  {/* Image */}
                   <div
                     className="position-relative overflow-hidden"
                     style={{ height: '245px' }}
@@ -100,7 +69,6 @@ const NewsSection = () => {
                       style={{ objectFit: 'cover' }}
                     />
 
-                    {/* Category */}
                     <span
                       className="position-absolute top-0 end-0 m-3 px-3 py-2 bg-white rounded-pill fw-semibold"
                       style={{ color: '#2563eb', fontSize: '0.8rem' }}
@@ -109,10 +77,7 @@ const NewsSection = () => {
                     </span>
                   </div>
 
-                  {/* Content */}
                   <div className={`p-4 ${isArabic ? 'text-end' : 'text-start'}`}>
-
-                    {/* Date */}
                     <div
                       className={`d-flex align-items-center gap-2 mb-3 ${
                         isArabic ? 'justify-content-end' : 'justify-content-start'
@@ -123,28 +88,32 @@ const NewsSection = () => {
                       <span>{t(`news.${item.key}.date`)}</span>
                     </div>
 
-                    {/* Title */}
                     <h5
                       className="fw-bold mb-3"
-                      style={{ color: '#111827', fontSize: '1.15rem', lineHeight: 1.6 }}
+                      style={{
+                        color: '#111827',
+                        fontSize: '1.15rem',
+                        lineHeight: 1.6,
+                      }}
                     >
                       {t(`news.${item.key}.title`)}
                     </h5>
 
-                    {/* Description */}
                     <p
                       className="mb-0"
-                      style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: 1.8 }}
+                      style={{
+                        color: '#64748b',
+                        fontSize: '0.9rem',
+                        lineHeight: 1.8,
+                      }}
                     >
                       {t(`news.${item.key}.description`)}
                     </p>
-
                   </div>
                 </article>
               </Link>
             </div>
           ))}
-
         </div>
       </div>
     </section>
