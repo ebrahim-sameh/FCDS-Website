@@ -4,16 +4,13 @@ import i18n from './i18n';
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
 import Home from './pages/Home/Home';
-<<<<<<< HEAD
-import Services from './pages/Services/Services.jsx';
-import Contact from './pages/Contact/Contact.jsx';
-import NotFound from './pages/NotFound/NotFound.jsx';
-=======
 import News from './pages/News/News';
 import NewsDetails from './pages/News/NewsDetails';
 import AboutSection from './pages/About/AboutSection';
 import DeanMessageSection from './pages/DeanMessage/DeanMessageSection';
->>>>>>> origin/main
+import Services from './pages/Services/Services.jsx';
+import Contact from './pages/Contact/Contact.jsx';
+import NotFound from './pages/NotFound/NotFound.jsx';
 
 function App() {
   useEffect(() => {
@@ -29,16 +26,13 @@ function App() {
       <div className="flex-grow-1">
         <Routes>
           <Route path="/" element={<Home />} />
-<<<<<<< HEAD
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-=======
           <Route path="/about" element={<AboutSection />} />
           <Route path="/dean-message" element={<DeanMessageSection />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:key" element={<NewsDetails />} />
->>>>>>> origin/main
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />
