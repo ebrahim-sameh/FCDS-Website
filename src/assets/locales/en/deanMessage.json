@@ -1,12 +1,12 @@
 {
   "deanMessage": {
-    "label": "About Us",
-    "title": "Dean's Message",
-    "imageAlt": "Dean of the Faculty of Computing and Data Science",
-    "paragraph1": "It is my pleasure to welcome you to the Faculty of Computing and Data Science at Alexandria University, one of the leading faculties keeping pace with the latest developments in computing and data science.",
-    "paragraph2": "We are committed to providing a distinguished education that combines strong theoretical foundations with practical application, preparing graduates who can compete locally and internationally and contribute effectively to digital transformation.",
+    "label": "About us",
+    "title": "Dean's message",
+    "imageAlt": "Dean of the Faculty of Computer and Data Science",
+    "paragraph1": "Welcome to the Faculty of Computer and Data Science at Alexandria University. Our programs follow current work in computing and data science.",
+    "paragraph2": "We aim to combine solid theory with practice so graduates can work in local and international tech roles.",
     "name": "Prof. Dr. Dean",
-    "position": "Dean of the Faculty of Computing and Data Science",
-    "readMore": "Read More"
+    "position": "Dean of the Faculty of Computer and Data Science",
+    "readMore": "Read more"
   }
 }

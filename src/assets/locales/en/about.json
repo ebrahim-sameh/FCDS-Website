@@ -1,27 +1,23 @@
 {
   "whyFCDS": {
-    "label": "Why Us",
-    "title": "Why Faculty of Computing and Data Science?",
-
+    "label": "Why us",
+    "title": "Why Faculty of Computer and Data Science?",
     "features": {
       "accreditedPrograms": {
-        "title": "Accredited Programs",
-        "description": "Updated curricula based on academic standards"
+        "title": "Accredited programs",
+        "description": "Curricula kept up to date with academic standards."
       },
-
       "modernLabs": {
-        "title": "Modern Labs",
-        "description": "Practical environment for hands-on learning"
+        "title": "Modern labs",
+        "description": "Labs for coursework and hands-on practice."
       },
-
       "excellentTeaching": {
-        "title": "Excellent Faculty",
-        "description": "Academic and industry expertise"
+        "title": "Teaching staff",
+        "description": "Faculty with academic and industry experience."
       },
-
       "employmentOpportunities": {
-        "title": "Employment Opportunities",
-        "description": "Partnerships with industry sectors"
+        "title": "Career links",
+        "description": "Partnerships that help with training and jobs."
       }
     }
   }
