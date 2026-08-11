@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
 import Button from '../../components/ui/Button';
 import ServiceCard from './ServiceCard';
-import servicesData from './services';
+import servicesData from '../../data/services';
 
 const Services = () => {
   const { t, i18n } = useTranslation('services');

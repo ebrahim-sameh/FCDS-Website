@@ -4,9 +4,9 @@ import i18n from './i18n';
 import Header from './components/layout/Header/Header';
 import Footer from './components/layout/Footer/Footer';
 import Home from './pages/Home/Home';
-import Services from './pages/Services/Services';
-import Contact from './pages/Contact/Contact';
-import NotFound from './pages/NotFound/NotFound';
+import Services from './pages/Services/Services.jsx';
+import Contact from './pages/Contact/Contact.jsx';
+import NotFound from './pages/NotFound/NotFound.jsx';
 
 function App() {
   useEffect(() => {

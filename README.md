@@ -1,15 +1,15 @@
 # FCDS Website
 
-Faculty of Computer and Data Science website for Alexandria University. Built with React and Vite. Arabic and English are both supported through i18n, with RTL and LTR switching.
+Faculty of Computer and Data Science site for Alexandria University. React + Vite, with Arabic and English through i18n (RTL/LTR).
 
 ## Features
 
-- Home page with hero, stats, quick links, and services preview
-- Services page with reusable service cards
+- Home page with hero, stats, quick links, and a services preview
+- Services page with reusable cards
 - Contact page with form validation and success messages
 - Language switcher (Arabic / English)
-- Responsive layout for desktop and mobile
-- React Router navigation and a 404 page
+- Responsive layout
+- React Router and a 404 page
 
 ## Technologies
 
@@ -26,7 +26,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173).
+Open http://localhost:5173.
 
 ## Build
 
@@ -41,6 +41,7 @@ npm run preview
 src/
   assets/locales/   # ar and en translation files
   components/       # shared UI and layout
+  data/             # mock data files
   pages/            # Home, Services, Contact, NotFound
   i18n.js
   App.jsx
@@ -48,8 +49,8 @@ src/
 
 ## i18n and RTL / LTR
 
-Translation files live under `src/assets/locales/ar` and `src/assets/locales/en`. The language switcher in the header updates `i18next`, sets `document.documentElement.lang` and `dir`, and stores the choice in `localStorage`.
+Translations are under `src/assets/locales/ar` and `src/assets/locales/en`. The header language switcher updates i18next, sets `lang` and `dir` on the document, and keeps the choice in `localStorage`.
 
 ## Team notes
 
-Work on Services and Contact lives on the `services-contact` branch. Other pages (About, Departments, News, Faculty, Events) are owned by other teammates and may still be merging into `main`.
+Services and Contact are on the `services-contact` branch. Other pages (About, Departments, News, Faculty, Events) are owned by teammates and may still be merging into `main`.

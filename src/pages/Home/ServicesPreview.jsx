@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
 import Button from '../../components/ui/Button';
 import ServiceCard from '../Services/ServiceCard';
-import services from '../Services/services';
+import services from '../../data/services';
 
 const ServicesPreview = () => {
   const { t } = useTranslation('services');
