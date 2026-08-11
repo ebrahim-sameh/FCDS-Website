@@ -6,17 +6,19 @@ import NewsSection from '../News/NewsSection'
 import AboutSection from '../About/AboutSection'
 import StatisticsSection from './StatisticsSection'
 import QuickLinks from './QuickLinks'
+import ServicesPreview from './ServicesPreview'
 
 const Home = () => {
   return (
     <div>
-          <HeroSection />
-          <StatisticsSection />
-          <QuickLinks />
-          <DepartmentsSection />
-          <DeanMessageSection />
-          <NewsSection />
-          <AboutSection />
+      <HeroSection />
+      <StatisticsSection />
+      <QuickLinks />
+      <DepartmentsSection />
+      <DeanMessageSection />
+      <NewsSection />
+      <ServicesPreview />
+      <AboutSection />
     </div>
   )
 }
