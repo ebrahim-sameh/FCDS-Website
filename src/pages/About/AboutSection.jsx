@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import SectionTitle from '../../components/ui/SectionTitle';
 
 const AboutSection = () => {
   const { t } = useTranslation('about');
@@ -35,25 +36,11 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="text-center mb-5">
 
-          <div
-            className="fw-semibold mb-2"
-            style={{
-              color: '#f59e0b',
-              fontSize: '0.95rem',
-            }}
-          >
-            {t('whyFCDS.label')}
-          </div>
-
-          <h2
-            className="fw-bold mb-0"
-            style={{
-              color: '#111827',
-              fontSize: 'clamp(2rem, 4vw, 2.6rem)',
-            }}
-          >
-            {t('whyFCDS.title')}
-          </h2>
+          {/* Section Header */}
+          <SectionTitle
+           eyebrow={t('whyFCDS.label')}
+           title={t('whyFCDS.title')}
+         />
 
         </div>
 

@@ -27,5 +27,12 @@
     "mediaAnalytics": "Media Analytics",
     "healthInformatics": "Health Informatics",
     "cyberSecurity": "Cyber Security"
-  }
+  },
+  "quickLinks": {
+  "title": "Quick Links",
+  "admissions": "Admissions",
+  "departments": "Departments",
+  "news": "Latest News",
+  "contact": "Contact Us"
+}
 }

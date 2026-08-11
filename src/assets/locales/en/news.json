@@ -1,8 +1,23 @@
 {
   "newsSection": {
-    "label": "Stay Updated",
-    "title": "Latest News",
-    "allNews": "All News"
+    "label": "Stay updated",
+    "title": "Latest news",
+    "allNews": "All news"
+  },
+  "page": {
+    "label": "News",
+    "title": "Faculty news",
+    "description": "Updates on events, partnerships, and student activities at the faculty."
+  },
+  "search": {
+    "placeholder": "Search news...",
+    "noResults": "No matching news found",
+    "tryAgain": "Try another search term or change the filter."
+  },
+  "filters": {
+    "all": "All",
+    "news": "News",
+    "events": "Events"
   },
 
   "news": {
