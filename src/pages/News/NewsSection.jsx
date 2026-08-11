@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
-import newsData from './news';
+import newsData from '../../data/news';
 
 const NewsSection = () => {
   const { t, i18n } = useTranslation('news');
