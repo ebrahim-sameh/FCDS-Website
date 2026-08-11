@@ -7,7 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import i18n from './i18n';
 import Header from './components/layout/Header/Header'
 import Footer from './components/layout/Footer/Footer'
-import Home from './pages/Home'
+import Home from './pages/Home/Home'
 
 function App() {
 
