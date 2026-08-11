@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "departments": "الأقسام",
+    "about": "عن الكلية",
+    "news": "الأخبار",
+    "contact": "تواصل معنا"
+  },
+  "college": {
+    "name": "الحاسبات وعلوم البيانات",
+    "university": "جامعة الإسكندرية",
+    "description": "كلية رائدة في تعليم الحاسبات وعلوم البيانات، نُعدّ كوادر قادرة على قيادة التحول الرقمي في مصر والمنطقة."
+  },
+  "buttons": {
+    "applyNow": "قدّم الآن"
+  },
+  "footer": {
+    "quickLinks": "روابط سريعة",
+    "departments": "الأقسام العلمية",
+    "contactUs": "تواصل معنا",
+    "address": "عزبة سعد، سيدي جابر، الإسكندرية",
+    "copyright": "© {{year}} كلية الحاسبات وعلوم البيانات — جميع الحقوق محفوظة."
+  },
+  "departmentsList": {
+    "businessAnalytics": "تحليل الأعمال",
+    "intelligentSystems": "النظم الذكية",
+    "mediaAnalytics": "تحليل الوسائط",
+    "healthInformatics": "معلوماتية الرعاية الصحية",
+    "cyberSecurity": "الأمن السيبراني"
+  }
+}

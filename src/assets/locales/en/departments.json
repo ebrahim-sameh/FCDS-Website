@@ -1,0 +1,36 @@
+{
+  "departmentsSection": {
+    "label": "What We Study",
+    "title": "Academic Departments",
+    "description": "Five modern specializations designed to meet the needs of the rapidly evolving digital job market.",
+    "learnMore": "Learn More",
+    "allDepartments": "All Departments"
+  },
+
+  "departmentsList": {
+    "businessAnalytics": {
+      "name": "Business Analytics",
+      "description": "Combines data science and business management to prepare experts capable of driving organizational decisions."
+    },
+
+    "intelligentSystems": {
+      "name": "Intelligent Systems",
+      "description": "Focuses on building intelligent systems based on machine learning, deep learning, and natural language processing."
+    },
+
+    "mediaAnalytics": {
+      "name": "Media Analytics",
+      "description": "Focuses on processing and analyzing multimedia including images, video, and audio using modern technologies."
+    },
+
+    "healthInformatics": {
+      "name": "Health Informatics",
+      "description": "Connects computer science with healthcare to develop advanced medical information systems."
+    },
+
+    "cyberSecurity": {
+      "name": "Cybersecurity",
+      "description": "Prepares experts capable of protecting systems, networks, and data from cybersecurity threats."
+    }
+  }
+}

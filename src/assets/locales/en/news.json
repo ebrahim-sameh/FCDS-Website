@@ -1,0 +1,32 @@
+{
+  "newsSection": {
+    "label": "Stay Updated",
+    "title": "Latest News",
+    "allNews": "All News"
+  },
+
+  "news": {
+    "types": {
+      "event": "Events",
+      "news": "News"
+    },
+
+    "graduation": {
+      "date": "September 14, 2026",
+      "title": "2026 Graduation Projects Exhibition Impresses the Jury",
+      "description": "The faculty hosted its annual graduation projects exhibition featuring more than 40 projects in artificial intelligence and data science."
+    },
+
+    "aiWorkshop": {
+      "date": "April 2, 2026",
+      "title": "Applied Artificial Intelligence Workshop Series Kicks Off",
+      "description": "The faculty organizes a specialized workshop series on applied artificial intelligence in collaboration with industry experts."
+    },
+
+    "partnership": {
+      "date": "March 18, 2026",
+      "title": "Faculty Signs Strategic Partnership with Leading Technology Companies",
+      "description": "The faculty signed a cooperation agreement to provide students with training and employment opportunities and develop curricula according to market needs."
+    }
+  }
+}

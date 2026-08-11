@@ -1,0 +1,28 @@
+{
+  "whyFCDS": {
+    "label": "لماذا نحن",
+    "title": "لماذا كلية الحاسبات وعلوم البيانات؟",
+
+    "features": {
+      "accreditedPrograms": {
+        "title": "برامج معتمدة",
+        "description": "مناهج محدثة وفق معايير علمية"
+      },
+
+      "modernLabs": {
+        "title": "معامل متطورة",
+        "description": "بيئة عملية للتطبيق الفعلي"
+      },
+
+      "excellentTeaching": {
+        "title": "هيئة تدريس متميزة",
+        "description": "خبرات أكاديمية وصناعية"
+      },
+
+      "employmentOpportunities": {
+        "title": "فرص توظيف",
+        "description": "شراكات مع قطاعات صناعية"
+      }
+    }
+  }
+}

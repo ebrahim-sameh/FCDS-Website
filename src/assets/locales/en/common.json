@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Home",
+    "departments": "Departments",
+    "about": "About",
+    "news": "News",
+    "contact": "Contact Us"
+  },
+  "college": {
+    "name": "Computer & Data Science",
+    "university": "Alexandria University",
+    "description": "A leading faculty in computer and data science education, preparing cadres capable of leading digital transformation in Egypt and the region."
+  },
+  "buttons": {
+    "applyNow": "Apply Now"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "departments": "Departments",
+    "contactUs": "Contact Us",
+    "address": "Ezbet Saad, Sidi Gaber, Alexandria",
+    "copyright": "© {{year}} Faculty of Computer & Data Science — All rights reserved."
+  },
+  "departmentsList": {
+    "businessAnalytics": "Business Analytics",
+    "intelligentSystems": "Intelligent Systems",
+    "mediaAnalytics": "Media Analytics",
+    "healthInformatics": "Health Informatics",
+    "cyberSecurity": "Cyber Security"
+  }
+}
