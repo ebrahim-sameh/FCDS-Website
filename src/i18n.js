@@ -14,14 +14,36 @@ import newsAr from './assets/locales/ar/news.json';
 import newsEn from './assets/locales/en/news.json';
 import aboutAr from './assets/locales/ar/about.json';
 import aboutEn from './assets/locales/en/about.json';
+import servicesAr from './assets/locales/ar/services.json';
+import servicesEn from './assets/locales/en/services.json';
+import contactAr from './assets/locales/ar/contact.json';
+import contactEn from './assets/locales/en/contact.json';
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
-      ar: { common: commonAr, home: homeAr, departments: departmentsAr, deanMessage: deanMessageAr, news: newsAr, about: aboutAr },
-      en: { common: commonEn, home: homeEn, departments: departmentsEn, deanMessage: deanMessageEn, news: newsEn, about: aboutEn },
+      ar: {
+        common: commonAr,
+        home: homeAr,
+        departments: departmentsAr,
+        deanMessage: deanMessageAr,
+        news: newsAr,
+        about: aboutAr,
+        services: servicesAr,
+        contact: contactAr,
+      },
+      en: {
+        common: commonEn,
+        home: homeEn,
+        departments: departmentsEn,
+        deanMessage: deanMessageEn,
+        news: newsEn,
+        about: aboutEn,
+        services: servicesEn,
+        contact: contactEn,
+      },
     },
     fallbackLng: 'ar',
     lng: localStorage.getItem('lang') || 'ar',

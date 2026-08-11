@@ -12,6 +12,7 @@ const Footer = () => {
     { key: 'about', path: '/about' },
     { key: 'departments', path: '/departments' },
     { key: 'news', path: '/news' },
+    { key: 'services', path: '/services' },
     { key: 'contact', path: '/contact' },
   ];
 

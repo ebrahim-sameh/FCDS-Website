@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
 
 const links = [
-  { key: 'admissions', icon: 'bi-mortarboard', path: '/admissions' },
   { key: 'departments', icon: 'bi-diagram-3', path: '/departments' },
   { key: 'news', icon: 'bi-newspaper', path: '/news' },
+  { key: 'services', icon: 'bi-grid', path: '/services' },
   { key: 'contact', icon: 'bi-headset', path: '/contact' },
 ];
 

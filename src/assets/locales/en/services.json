@@ -1,0 +1,36 @@
+{
+  "label": "Campus support",
+  "title": "Faculty services",
+  "subtitle": "Help with registration, advising, labs, and training for students and staff.",
+  "viewAll": "View all services",
+  "loading": "Loading services...",
+  "empty": "No services are listed right now.",
+  "error": "Could not load services.",
+  "retry": "Try again",
+  "items": {
+    "studentAffairs": {
+      "title": "Student affairs",
+      "description": "Registration help, certificates, and answers about academic rules."
+    },
+    "academicAdvising": {
+      "title": "Academic advising",
+      "description": "Course planning and guidance from department advisors each semester."
+    },
+    "labs": {
+      "title": "Computer labs",
+      "description": "Lab access for coursework, projects, and practical sessions."
+    },
+    "library": {
+      "title": "Library and resources",
+      "description": "Books, journals, and digital resources for computer and data science."
+    },
+    "training": {
+      "title": "Training and careers",
+      "description": "Internships, workshops, and links to employers in the tech field."
+    },
+    "itSupport": {
+      "title": "IT support",
+      "description": "Help with accounts, email, and faculty systems during office hours."
+    }
+  }
+}
