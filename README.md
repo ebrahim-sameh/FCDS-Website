@@ -88,10 +88,8 @@ src/
   pages/            # route pages and home sections
   i18n.js
   App.jsx
-docs/               # i18n notes, testing, screenshots, submission pack
+docs/               # i18n notes, testing, screenshots
 ```
-
-Submission checklist: [docs/SUBMISSION.md](docs/SUBMISSION.md). Presentation outline: [docs/presentation.md](docs/presentation.md).
 
 ## Routes
 
