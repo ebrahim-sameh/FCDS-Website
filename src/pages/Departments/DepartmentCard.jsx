@@ -37,16 +37,6 @@ const DepartmentCard = ({ item }) => {
           {t(`departmentsList.${item.key}.description`)}
         </p>
 
-        <div className="d-flex gap-4 mb-3" style={{ color: '#0b1f52', fontSize: '0.85rem' }}>
-          <span>
-            <i className="bi bi-people me-1" aria-hidden="true" />
-            {item.students} {t('meta.students')}
-          </span>
-          <span>
-            <i className="bi bi-journal-text me-1" aria-hidden="true" />
-            {item.courses} {t('meta.courses')}
-          </span>
-        </div>
         <span className="fw-semibold" style={{ color: '#2563eb', fontSize: '0.9rem' }}>
           {t('departmentsSection.learnMore')}
           <i className={`bi ${isArabic ? 'bi-arrow-left' : 'bi-arrow-right'} ms-2`} aria-hidden="true" />

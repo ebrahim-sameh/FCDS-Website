@@ -55,20 +55,18 @@ const DepartmentDetails = () => {
         <p className={`mb-4 ${align}`} style={{ color: '#64748b', fontSize: '1.1rem', lineHeight: 2 }}>
           {t(`departmentsList.${key}.description`)}
         </p>
-        <div className="row g-3 mb-5">
-          {[
-            { value: item.students, label: t('meta.students') },
-            { value: item.courses, label: t('meta.courses') },
-            { value: relatedPrograms.length, label: t('meta.programs') },
-          ].map((stat, i) => (
-            <div key={i} className="col-4">
+        {relatedPrograms.length > 0 && (
+          <div className="row g-3 mb-5">
+            <div className="col-12 col-sm-4">
               <div className="p-3 rounded-4 text-center h-100" style={{ backgroundColor: '#f8f9fb' }}>
-                <div className="fw-bold" style={{ color: '#2563eb', fontSize: '1.6rem' }}>{stat.value}</div>
-                <div className="text-muted" style={{ fontSize: '0.85rem' }}>{stat.label}</div>
+                <div className="fw-bold" style={{ color: '#2563eb', fontSize: '1.6rem' }}>
+                  {relatedPrograms.length}
+                </div>
+                <div className="text-muted" style={{ fontSize: '0.85rem' }}>{t('meta.programs')}</div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        )}
         {Array.isArray(highlights) && highlights.length > 0 && (
           <div className="mb-5">
             <h2 className={`fw-bold mb-3 ${align}`} style={{ color: '#0b1f52', fontSize: '1.4rem' }}>
