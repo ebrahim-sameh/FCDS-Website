@@ -11,35 +11,30 @@ const DepartmentsSection = () => {
   const departments = [
     {
       key: 'businessAnalytics',
-      path: '/departments/business-analytics',
       icon: 'bi-bar-chart',
       iconColor: '#2563eb',
       iconBg: '#eaf1ff',
     },
     {
       key: 'intelligentSystems',
-      path: '/departments/intelligent-systems',
       icon: 'bi-cpu',
       iconColor: '#7c3aed',
       iconBg: '#f1eaff',
     },
     {
       key: 'mediaAnalytics',
-      path: '/departments/media-analytics',
       icon: 'bi-image',
       iconColor: '#ec4899',
       iconBg: '#fceaf4',
     },
     {
       key: 'healthInformatics',
-      path: '/departments/health-informatics',
       icon: 'bi-heart-pulse',
       iconColor: '#059669',
       iconBg: '#e7f6f2',
     },
     {
       key: 'cyberSecurity',
-      path: '/departments/cyber-security',
       icon: 'bi-shield-check',
       iconColor: '#dc2626',
       iconBg: '#fdeaea',
@@ -66,7 +61,7 @@ const DepartmentsSection = () => {
               className="col-12 col-md-6 col-lg-4"
             >
               <Link
-                to={department.path}
+                to={`/departments/${department.key}`}
                 className="text-decoration-none text-dark"
               >
                 <div
