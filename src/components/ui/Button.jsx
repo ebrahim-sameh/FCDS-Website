@@ -12,7 +12,7 @@ const Button = ({ children, to, href, onClick, variant = 'primary', icon, type =
 
   if (to) {
     return (
-      <Link to={to} className={classes} {...props}>
+      <Link to={to} className={classes} onClick={onClick} {...props}>
         {children}
         {icon}
       </Link>
