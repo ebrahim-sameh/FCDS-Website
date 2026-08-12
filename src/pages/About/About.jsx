@@ -10,7 +10,7 @@ const About = () => {
   const textAlign = isArabic ? 'text-end' : 'text-start';
 
   const stats = [
-    { key: 'students', value: '+4000', icon: 'bi-mortarboard' },
+    { key: 'students', value: '+2000', icon: 'bi-mortarboard' },
     { key: 'programs', value: '5', icon: 'bi-journal-bookmark' },
     { key: 'faculty', value: '+50', icon: 'bi-person-workspace' },
     { key: 'labs', value: '12', icon: 'bi-hdd-network' },
