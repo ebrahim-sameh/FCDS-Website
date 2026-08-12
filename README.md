@@ -2,16 +2,23 @@
 
 Faculty of Computer and Data Science site for Alexandria University. Built with React and Vite. Arabic and English use i18n, with RTL and LTR switching.
 
+Content is based on the official faculty site:
+- https://fcds.alexu.edu.eg/index.php/en/
+- https://fcds.alexu.edu.eg/index.php/ar/
+
 ## Features
 
-- Home page with hero, stats, quick links, news preview, and services preview
-- News list with search and filters, plus news details pages
-- Services page with reusable cards
-- Contact page with form validation and success messages
-- About and dean message routes
+- Home page with hero, stats, quick links, departments, programs, news, announcements, services, and events
+- Departments list and department details
+- Programs page
+- News list with search/filter and news details
+- Announcements with search/filter
+- Faculty list with search/filter and faculty details
+- Services page
+- Events page
+- Contact form with validation
 - Language switcher (Arabic / English)
-- Responsive layout
-- 404 page for unknown routes
+- Responsive layout and 404 page
 
 ## Technologies
 
@@ -42,10 +49,9 @@ npm run preview
 ```text
 src/
   assets/locales/   # ar and en translation files
-  components/       # shared UI and layout
-    ui/             # Button, SectionTitle, SearchBar, FilterSelect, LoadingState, EmptyState, Modal
+  components/       # layout and shared UI
   data/             # mock data files
-  pages/            # Home, News, Services, Contact, NotFound, ...
+  pages/            # route pages and home sections
   i18n.js
   App.jsx
 ```
@@ -55,11 +61,18 @@ src/
 - `/` Home
 - `/about` About
 - `/dean-message` Dean message
-- `/news` News list
+- `/departments` Departments
+- `/departments/:key` Department details
+- `/programs` Programs
+- `/news` News
 - `/news/:key` News details
+- `/announcements` Announcements
+- `/faculty` Faculty
+- `/faculty/:key` Faculty details
 - `/services` Services
+- `/events` Events
 - `/contact` Contact
 
 ## i18n and RTL / LTR
 
-See [docs/i18n.md](docs/i18n.md) for how language switching and RTL/LTR work.
+See [docs/i18n.md](docs/i18n.md).
