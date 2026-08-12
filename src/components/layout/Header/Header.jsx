@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Button from '../../ui/Button';
 
 const Header = () => {
   const { t, i18n } = useTranslation('common');
@@ -17,9 +18,14 @@ const Header = () => {
 
   const navItems = [
     { key: 'home', path: '/' },
-    { key: 'departments', path: '/departments' },
     { key: 'about', path: '/about' },
+    { key: 'departments', path: '/departments' },
+    { key: 'programs', path: '/programs' },
     { key: 'news', path: '/news' },
+    { key: 'announcements', path: '/announcements' },
+    { key: 'faculty', path: '/faculty' },
+    { key: 'services', path: '/services' },
+    { key: 'events', path: '/events' },
     { key: 'contact', path: '/contact' },
   ];
 
@@ -30,17 +36,17 @@ const Header = () => {
       <div className="container-fluid px-4">
         <div className="d-flex align-items-center justify-content-between py-2">
 
-          {/* شعار الكلية + الاسم */}
+          {/* Collage Logo*/}
           <div className="d-flex align-items-center gap-2">
-                <img
-                    src="/imgs/au-logo.svg"
-                    alt="Alexandria University Logo"
-                    style={{ width: 150, height: 50 }}
-                />
+            <img
+              src="/imgs/au-logo.svg"
+              alt="Alexandria University Logo"
+              style={{ width: 150, height: 50 }}
+            />
           </div>
 
           {/* روابط التنقل - Desktop */}
-          <nav className="d-none d-lg-flex align-items-center gap-4">
+          <nav className="d-none d-xl-flex align-items-center gap-3 flex-wrap justify-content-center">
             {navItems.map((item) => (
               <NavLink
                 key={item.key}
@@ -59,12 +65,8 @@ const Header = () => {
           </nav>
 
           {/* أزرار Desktop */}
-          <div className="d-none d-lg-flex align-items-center gap-3">
-            <button
-              onClick={toggleLanguage}
-              className="btn btn-outline-secondary rounded-pill d-flex align-items-center gap-2 px-3 py-1"
-              aria-label="Toggle language"
-            >
+          <div className="d-none d-xl-flex align-items-center gap-3">
+            <Button variant="outlineDark" onClick={toggleLanguage} aria-label="Toggle language">
               <span
                 className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
                 style={{ width: 20, height: 20, fontSize: '0.7rem' }}
@@ -74,17 +76,16 @@ const Header = () => {
               <span className="fw-semibold" style={{ fontSize: '0.8rem' }}>
                 {isArabic ? 'EN' : 'AR'}
               </span>
-            </button>
+            </Button>
 
-            <button className="btn btn-warning rounded-pill fw-semibold px-4 d-flex align-items-center gap-2">
+            <Button variant="primary" icon={<i className="bi bi-arrow-up"></i>}>
               {t('buttons.applyNow')}
-              <i className="bi bi-arrow-up"></i>
-            </button>
+            </Button>
           </div>
 
           {/* زرار الهامبرجر - موبايل/تابلت فقط */}
           <button
-            className="btn d-lg-none border-0"
+            className="btn d-xl-none border-0"
             onClick={() => setIsMenuOpen(true)}
             aria-label="Open menu"
           >
@@ -103,17 +104,11 @@ const Header = () => {
         style={{ visibility: isMenuOpen ? 'visible' : 'hidden' }}
       >
         <div className="offcanvas-header border-bottom">
-          <div className="d-flex align-items-center gap-2">
-            <div
-              className="rounded-circle bg-primary d-flex align-items-center justify-content-center text-white fw-bold"
-              style={{ width: 36, height: 36, fontSize: '0.9rem' }}
-            >
-              {isArabic ? 'ح' : 'C'}
-            </div>
-            <span className="fw-semibold" style={{ fontSize: '0.9rem' }}>
-              {t('college.name')}
-            </span>
-          </div>
+          <img
+            src="/imgs/au-logo.svg"
+            alt="Alexandria University Logo"
+            style={{ width: 120, height: 40 }}
+          />
           <button
             type="button"
             className="btn-close"
@@ -141,9 +136,10 @@ const Header = () => {
           </nav>
 
           <div className="d-flex flex-column gap-3 mt-auto">
-            <button
+            <Button
+              variant="outlineDark"
               onClick={toggleLanguage}
-              className="btn btn-outline-secondary rounded-pill d-flex align-items-center justify-content-center gap-2 py-2"
+              className="justify-content-center"
             >
               <span
                 className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
@@ -154,12 +150,15 @@ const Header = () => {
               <span className="fw-semibold" style={{ fontSize: '0.8rem' }}>
                 {isArabic ? 'EN' : 'AR'}
               </span>
-            </button>
+            </Button>
 
-            <button className="btn btn-warning rounded-pill fw-semibold py-2 d-flex align-items-center justify-content-center gap-2">
+            <Button
+              variant="primary"
+              icon={<i className="bi bi-arrow-up"></i>}
+              className="justify-content-center"
+            >
               {t('buttons.applyNow')}
-              <i className="bi bi-arrow-up"></i>
-            </button>
+            </Button>
           </div>
         </div>
       </div>

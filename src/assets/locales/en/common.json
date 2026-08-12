@@ -1,31 +1,56 @@
 {
   "nav": {
     "home": "Home",
-    "departments": "Departments",
     "about": "About",
+    "departments": "Departments",
+    "programs": "Programs",
     "news": "News",
-    "contact": "Contact Us"
+    "announcements": "Announcements",
+    "faculty": "Faculty",
+    "services": "Services",
+    "events": "Events",
+    "contact": "Contact us"
   },
   "college": {
     "name": "Computer & Data Science",
     "university": "Alexandria University",
-    "description": "A leading faculty in computer and data science education, preparing cadres capable of leading digital transformation in Egypt and the region."
+    "description": "Faculty of Computer and Data Science at Alexandria University."
   },
   "buttons": {
-    "applyNow": "Apply Now"
+    "applyNow": "Apply now"
   },
   "footer": {
-    "quickLinks": "Quick Links",
+    "quickLinks": "Quick links",
     "departments": "Departments",
-    "contactUs": "Contact Us",
+    "contactUs": "Contact us",
     "address": "Ezbet Saad, Sidi Gaber, Alexandria",
-    "copyright": "© {{year}} Faculty of Computer & Data Science — All rights reserved."
+    "copyright": "© {{year}} Faculty of Computer & Data Science. All rights reserved."
   },
   "departmentsList": {
     "businessAnalytics": "Business Analytics",
     "intelligentSystems": "Intelligent Systems",
     "mediaAnalytics": "Media Analytics",
     "healthInformatics": "Health Informatics",
-    "cyberSecurity": "Cyber Security"
+    "cyberSecurity": "Cybersecurity"
+  },
+  "quickLinks": {
+    "title": "Quick links",
+    "departments": "Departments",
+    "programs": "Programs",
+    "news": "Latest news",
+    "announcements": "Announcements",
+    "faculty": "Faculty",
+    "services": "Services",
+    "events": "Events",
+    "contact": "Contact us"
+  },
+  "notFound": {
+    "message": "This page was not found.",
+    "backHome": "Back to home"
+  },
+  "states": {
+    "loading": "Loading data",
+    "error": "An error occurred while loading the data",
+    "retry": "Retry"
   }
 }

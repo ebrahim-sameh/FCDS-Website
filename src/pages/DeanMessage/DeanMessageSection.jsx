@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SectionTitle from '../../components/ui/SectionTitle';
 
 const DeanMessageSection = () => {
   const { t, i18n } = useTranslation('deanMessage');
@@ -32,6 +33,7 @@ const DeanMessageSection = () => {
                 src="/imgs/DrMagdaMadbolyDEAN.jpeg"
                 alt={t('deanMessage.imageAlt')}
                 className="img-fluid w-100"
+                loading="lazy"
                 style={{
                   height: '540px',
                   objectFit: 'cover',
@@ -50,27 +52,12 @@ const DeanMessageSection = () => {
                 : 'order-lg-2 text-start'
             }`}
           >
-            {/* Label */}
-            <div
-              className="fw-semibold mb-2"
-              style={{
-                color: '#f59e0b',
-                fontSize: '0.95rem',
-              }}
-            >
-              {t('deanMessage.label')}
-            </div>
-
-            {/* Title */}
-            <h2
-              className="fw-bold mb-4"
-              style={{
-                color: '#0b1f52',
-                fontSize: 'clamp(2rem, 4vw, 2.7rem)',
-              }}
-            >
-              {t('deanMessage.title')}
-            </h2>
+            {/* Section Header */}
+            <SectionTitle
+              eyebrow={t('deanMessage.label')}
+              title={t('deanMessage.title')}
+              align="start"
+            />
 
             {/* Quote icon */}
             <div

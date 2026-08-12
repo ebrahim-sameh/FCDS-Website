@@ -1,0 +1,42 @@
+{
+  "page": {
+    "label": "Notice board",
+    "title": "Announcements",
+    "description": "Official notices for students and staff."
+  },
+  "viewAll": "View all announcements",
+  "searchPlaceholder": "Search announcements...",
+  "categories": {
+    "all": "All categories",
+    "academic": "Academic",
+    "exams": "Exams",
+    "services": "Services",
+    "opportunities": "Opportunities"
+  },
+  "loading": "Loading announcements...",
+  "empty": "No announcements match your search.",
+  "error": "Could not load announcements.",
+  "retry": "Try again",
+  "items": {
+    "registrationFall": {
+      "title": "Fall registration opens",
+      "summary": "Course registration for the fall semester is open through student affairs.",
+      "body": "Course registration for the fall semester is now open. Students should complete registration through student affairs before the deadline listed on the faculty notice board. Contact your academic advisor if you need help selecting courses."
+    },
+    "examSchedule": {
+      "title": "Midterm exam schedule published",
+      "summary": "Check the exam timetable on the faculty notice board and student portal.",
+      "body": "The midterm exam schedule is available on the faculty notice board and the student portal. Review your exam dates, rooms, and any special instructions for each course. Report scheduling conflicts to student affairs as soon as possible."
+    },
+    "labMaintenance": {
+      "title": "Lab maintenance window",
+      "summary": "Selected computer labs will be closed for maintenance this week.",
+      "body": "Selected computer labs will be closed for scheduled maintenance this week. Check the posted schedule for affected rooms and use alternative labs listed on the notice board. Lab access will resume once maintenance is complete."
+    },
+    "scholarshipCall": {
+      "title": "Scholarship applications open",
+      "summary": "Eligible students can apply for available faculty-supported scholarships.",
+      "body": "Applications are open for faculty-supported scholarships. Eligible students should submit the required forms and supporting documents through student affairs by the published deadline. See the notice board for eligibility criteria and application steps."
+    }
+  }
+}

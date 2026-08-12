@@ -1,36 +1,35 @@
 {
   "departmentsSection": {
-    "label": "What We Study",
-    "title": "Academic Departments",
-    "description": "Five modern specializations designed to meet the needs of the rapidly evolving digital job market.",
-    "learnMore": "Learn More",
-    "allDepartments": "All Departments"
+    "label": "What we study",
+    "title": "Academic departments",
+    "description": "Five specializations aimed at current digital job needs.",
+    "learnMore": "Learn more",
+    "allDepartments": "All departments"
   },
-
   "departmentsList": {
     "businessAnalytics": {
       "name": "Business Analytics",
-      "description": "Combines data science and business management to prepare experts capable of driving organizational decisions."
+      "description": "Combines data science and business management for decision support work."
     },
-
     "intelligentSystems": {
       "name": "Intelligent Systems",
-      "description": "Focuses on building intelligent systems based on machine learning, deep learning, and natural language processing."
+      "description": "Builds systems with machine learning, deep learning, and natural language processing."
     },
-
     "mediaAnalytics": {
       "name": "Media Analytics",
-      "description": "Focuses on processing and analyzing multimedia including images, video, and audio using modern technologies."
+      "description": "Works with images, video, and audio using current analysis tools."
     },
-
     "healthInformatics": {
       "name": "Health Informatics",
-      "description": "Connects computer science with healthcare to develop advanced medical information systems."
+      "description": "Connects computing with healthcare systems and medical data."
     },
-
     "cyberSecurity": {
       "name": "Cybersecurity",
-      "description": "Prepares experts capable of protecting systems, networks, and data from cybersecurity threats."
+      "description": "Covers protection of systems, networks, and data."
     }
+  },
+  "details": {
+    "notFound": "Department not found.",
+    "back": "Back to departments"
   }
 }

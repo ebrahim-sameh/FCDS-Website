@@ -11,16 +11,21 @@ const Footer = () => {
     { key: 'home', path: '/' },
     { key: 'about', path: '/about' },
     { key: 'departments', path: '/departments' },
+    { key: 'programs', path: '/programs' },
     { key: 'news', path: '/news' },
+    { key: 'announcements', path: '/announcements' },
+    { key: 'faculty', path: '/faculty' },
+    { key: 'services', path: '/services' },
+    { key: 'events', path: '/events' },
     { key: 'contact', path: '/contact' },
   ];
 
   const departments = [
-    { key: 'businessAnalytics', path: '/departments/business-analytics' },
-    { key: 'intelligentSystems', path: '/departments/intelligent-systems' },
-    { key: 'mediaAnalytics', path: '/departments/media-analytics' },
-    { key: 'healthInformatics', path: '/departments/health-informatics' },
-    { key: 'cyberSecurity', path: '/departments/cyber-security' },
+    { key: 'businessAnalytics', path: '/departments/businessAnalytics' },
+    { key: 'intelligentSystems', path: '/departments/intelligentSystems' },
+    { key: 'mediaAnalytics', path: '/departments/mediaAnalytics' },
+    { key: 'healthInformatics', path: '/departments/healthInformatics' },
+    { key: 'cyberSecurity', path: '/departments/cyberSecurity' },
   ];
 
   const socialLinks = [
