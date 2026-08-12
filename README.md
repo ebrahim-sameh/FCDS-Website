@@ -2,9 +2,9 @@
 
 ## Overview
 
-This is a front-end site for the Faculty of Computer and Data Science at Alexandria University. It is built with React and Vite and supports Arabic and English through i18n, with RTL and LTR layout switching.
+Faculty of Computer and Data Science site for Alexandria University. Built with React and Vite. Arabic and English use i18n, with RTL and LTR switching.
 
-Text and structure follow the official faculty websites:
+Content is based on the official faculty site:
 
 - https://fcds.alexu.edu.eg/index.php/en/
 - https://fcds.alexu.edu.eg/index.php/ar/
@@ -66,6 +66,8 @@ Screenshots were taken in English (`localStorage.lang = en`) from a production p
 ### Contact
 
 ![Contact page](docs/screenshots/contact.png)
+
+For responsive checks, see [docs/TESTING.md](docs/TESTING.md).
 
 ## Project structure
 
