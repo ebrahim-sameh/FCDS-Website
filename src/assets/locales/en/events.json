@@ -1,0 +1,39 @@
+{
+  "page": {
+    "label": "Calendar",
+    "title": "Events",
+    "description": "Upcoming academic and student events at the faculty."
+  },
+  "types": {
+    "all": "All types",
+    "academic": "Academic",
+    "contest": "Contests",
+    "career": "Career"
+  },
+  "loading": "Loading events...",
+  "empty": "No events match your filter.",
+  "error": "Could not load events.",
+  "retry": "Try again",
+  "items": {
+    "orientationWeek": {
+      "title": "New student orientation",
+      "summary": "Welcome sessions for new students covering registration and campus services.",
+      "location": "Faculty campus, Smouha"
+    },
+    "icpcTraining": {
+      "title": "ICPC training session",
+      "summary": "Practice session for the faculty programming contest team.",
+      "location": "Computer labs"
+    },
+    "careerDay": {
+      "title": "Career day",
+      "summary": "Meet local tech employers and ask about training and jobs.",
+      "location": "Main hall"
+    },
+    "researchSeminar": {
+      "title": "Student research seminar",
+      "summary": "Short talks by students and staff on recent project work.",
+      "location": "Seminar room"
+    }
+  }
+}
