@@ -25,4 +25,6 @@ dist-ssr
 
 # Local agent notes (do not commit)
 agent-artifacts/
+
 scripts/
+>>>>>>> origin/main

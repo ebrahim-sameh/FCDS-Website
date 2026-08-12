@@ -6,7 +6,7 @@ import Footer from './components/layout/Footer/Footer.jsx';
 import Home from './pages/Home/Home.jsx';
 import News from './pages/News/News.jsx';
 import NewsDetails from './pages/News/NewsDetails.jsx';
-import AboutSection from './pages/About/AboutSection.jsx';
+import About from './pages/About/About.jsx';
 import DeanMessageSection from './pages/DeanMessage/DeanMessageSection.jsx';
 import Services from './pages/Services/Services.jsx';
 import Contact from './pages/Contact/Contact.jsx';
@@ -18,7 +18,6 @@ import Faculty from './pages/Faculty/Faculty.jsx';
 import FacultyDetails from './pages/Faculty/FacultyDetails.jsx';
 import Events from './pages/Events/Events.jsx';
 import Announcements from './pages/Announcements/Announcements.jsx';
-
 function App() {
   useEffect(() => {
     const savedLang = localStorage.getItem('lang') || 'ar';
@@ -33,7 +32,7 @@ function App() {
       <div className="flex-grow-1">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutSection />} />
+          <Route path="/about" element={<About />} />
           <Route path="/dean-message" element={<DeanMessageSection />} />
           <Route path="/departments" element={<Departments />} />
           <Route path="/departments/:key" element={<DepartmentDetails />} />

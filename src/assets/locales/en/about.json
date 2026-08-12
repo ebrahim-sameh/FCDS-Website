@@ -1,24 +1,52 @@
 {
+  "hero": {
+    "breadcrumbHome": "Home",
+    "breadcrumbCurrent": "About",
+    "title": "About the Faculty of Computing and Data Science",
+    "subtitle": "A modern academic institution combining excellent education, scientific research, and entrepreneurship to prepare the leaders of digital transformation."
+  },
+  "overview": {
+    "label": "About Us",
+    "title": "Who We Are",
+    "paragraph1": "The Faculty of Computing and Data Science at Alexandria University is one of the leading faculties specialized in computing, data analytics, and artificial intelligence. It was founded to meet the growing demand for qualified talent in the digital job market.",
+    "paragraph2": "We offer accredited and up-to-date academic programs, labs equipped with the latest technologies, and a faculty with strong academic and industry experience, aiming to graduate professionals able to compete locally and globally.",
+    "imageAlt": "Faculty of Computing and Data Science building"
+  },
+  "stats": {
+    "students": "Students",
+    "programs": "Academic Programs",
+    "faculty": "Faculty Members",
+    "labs": "Modern Labs"
+  },
+  "visionMission": {
+    "vision": {
+      "title": "Our Vision",
+      "text": "The college seeks to provide distinguished education and scientific research in the fields of computers and data sciences, by offering modern academic programs in accordance with national and international standards for the quality of education using advanced learning patterns and methods to create highly competitive cadres of specialists in the fields of computers and data science."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "Preparing specialized and distinguished cadres and qualifying competencies to compete professionally in the fields of computers and data sciences by providing distinguished educational programs in accordance with national and international standards for the quality of education in a way that contributes to building a knowledge economy and solving the technical and informational problems of society. and preparing graduates who are able to enable the various sectors of the labor market to invest modern technology and information technologies to serve the community."
+    }
+  },
+  "values": {
+    "label": "Our Values",
+    "title": "The Values We Believe In",
+    "items": {
+      "excellence": { "title": "Excellence", "description": "A constant pursuit of the highest quality standards in education and research." },
+      "innovation": { "title": "Innovation", "description": "Encouraging creative ideas and adopting the latest technologies." },
+      "integrity": { "title": "Integrity", "description": "Commitment to ethical values and transparency in all our work." },
+      "collaboration": { "title": "Collaboration", "description": "Building effective partnerships with academic and industry institutions." }
+    }
+  },
   "whyFCDS": {
-    "label": "Why us",
-    "title": "Why Faculty of Computer and Data Science?",
+    "label": "Why Us",
+    "title": "Why Faculty of Computing and Data Science?",
     "features": {
-      "accreditedPrograms": {
-        "title": "Accredited programs",
-        "description": "Curricula kept up to date with academic standards."
-      },
-      "modernLabs": {
-        "title": "Modern labs",
-        "description": "Labs for coursework and hands-on practice."
-      },
-      "excellentTeaching": {
-        "title": "Teaching staff",
-        "description": "Faculty with academic and industry experience."
-      },
-      "employmentOpportunities": {
-        "title": "Career links",
-        "description": "Partnerships that help with training and jobs."
-      }
+      "accreditedPrograms": { "title": "Accredited Programs", "description": "Updated curricula based on academic standards" },
+      "modernLabs": { "title": "Modern Labs", "description": "Practical environment for hands-on learning" },
+      "excellentTeaching": { "title": "Excellent Faculty", "description": "Academic and industry expertise" },
+      "employmentOpportunities": { "title": "Employment Opportunities", "description": "Partnerships with industry sectors" }
+
     }
   }
 }
