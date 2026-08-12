@@ -9,16 +9,18 @@ Content is based on the official faculty site:
 - https://fcds.alexu.edu.eg/index.php/en/
 - https://fcds.alexu.edu.eg/index.php/ar/
 
+Repository: https://github.com/ebrahim-sameh/FCDS-Website
+
 ## Features
 
-- Home page with hero, stats, quick links, departments, programs, news, announcements, services, and events
-- Departments list and department details
-- Programs page
+- Home page with hero, stats, quick links, and section previews
+- About and dean message
+- Departments list with search, plus department details
+- Programs page with search and department filter
 - News list with search and filter, plus news details
-- Announcements with search and filter
-- Faculty list with search and filter, plus faculty details
-- Services page
-- Events page
+- Announcements with search, filter, and modal details
+- Faculty list with search and department filter, plus faculty details
+- Services and events
 - Contact form with validation
 - Language switcher (Arabic / English)
 - Responsive layout and 404 page
@@ -27,7 +29,7 @@ Content is based on the official faculty site:
 
 - React 19
 - Vite
-- React Router
+- React Router (`HashRouter` in production so GitHub Pages deep links work)
 - Bootstrap 5 and Bootstrap Icons
 - i18next / react-i18next
 
@@ -47,15 +49,12 @@ npm run build
 npm run preview
 ```
 
-<<<<<<< HEAD
-=======
 ## Live demo (GitHub Pages)
 
 https://ebrahim-sameh.github.io/FCDS-Website/
 
-A GitHub Actions workflow deploys `main` to Pages. Production builds use the `/FCDS-Website/` base path so assets and routes work on the project site.
+A GitHub Actions workflow deploys `main` to Pages. Production builds use the `/FCDS-Website/` base path. Routes on the live site use hash URLs, for example `/#/programs` and `/#/news`.
 
->>>>>>> origin/main
 ## Screenshots
 
 Screenshots were taken in English (`localStorage.lang = en`) from a production preview build.
@@ -89,18 +88,14 @@ src/
   pages/            # route pages and home sections
   i18n.js
   App.jsx
-<<<<<<< HEAD
-docs/               # i18n notes, testing, screenshots, submission
+docs/               # i18n notes, testing, screenshots, submission pack
 ```
 
 Submission checklist: [docs/SUBMISSION.md](docs/SUBMISSION.md). Presentation outline: [docs/presentation.md](docs/presentation.md).
 
-=======
-docs/               # i18n notes, testing, screenshots
-```
-
->>>>>>> origin/main
 ## Routes
+
+Local and hash paths use the same route names:
 
 - `/` Home
 - `/about` About
@@ -116,6 +111,8 @@ docs/               # i18n notes, testing, screenshots
 - `/services` Services
 - `/events` Events
 - `/contact` Contact
+
+On GitHub Pages, open them as `/#/about`, `/#/departments`, and so on.
 
 ## i18n and RTL / LTR
 
