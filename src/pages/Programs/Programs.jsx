@@ -70,7 +70,6 @@ const Programs = () => {
               value={dept}
               onChange={setDept}
               options={filterOptions}
-              aria-label={t('filterByDepartment')}
             />
           </div>
         </div>
