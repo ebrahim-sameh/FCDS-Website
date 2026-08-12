@@ -1,16 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import './i18n';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './index.css'
 import App from './App.jsx'
 
+// HashRouter avoids GitHub Pages document 404s (and console errors) on deep links.
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )

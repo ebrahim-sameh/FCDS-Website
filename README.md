@@ -49,12 +49,9 @@ npm run preview
 
 ## Live demo (GitHub Pages)
 
-A GitHub Actions workflow deploys `main` to GitHub Pages.
+https://ebrahim-sameh.github.io/FCDS-Website/
 
-- Demo on this fork (when Pages is enabled): https://ebrahim-sameh.github.io/FCDS-Website/
-- Team repo: https://AhmedALHadiwi.github.io/FCDS-Website/ (after the owner turns on Pages: Settings → Pages → Source → GitHub Actions)
-
-Production builds use the `/FCDS-Website/` base path so assets and routes work on project Pages.
+A GitHub Actions workflow deploys `main` to Pages. Production builds use the `/FCDS-Website/` base path so assets and routes work on the project site.
 
 ## Screenshots
 

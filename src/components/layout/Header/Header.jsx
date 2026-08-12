@@ -106,7 +106,7 @@ const Header = () => {
       >
         <div className="offcanvas-header border-bottom">
           <img
-            src="/imgs/au-logo.svg"
+            src={asset('imgs/au-logo.svg')}
             alt="Alexandria University Logo"
             style={{ width: 120, height: 40 }}
           />
