@@ -23,6 +23,7 @@ const AnnouncementCard = ({ item, onClick }) => {
       }}
       role={onClick ? 'button' : undefined}
       tabIndex={onClick ? 0 : undefined}
+      aria-label={onClick ? t(`items.${item.key}.title`) : undefined}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = 'translateY(-4px)';
         e.currentTarget.style.boxShadow = '0 10px 24px rgba(15, 23, 42, 0.08)';
