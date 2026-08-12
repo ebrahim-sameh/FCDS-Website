@@ -18,10 +18,14 @@ const Header = () => {
 
   const navItems = [
     { key: 'home', path: '/' },
-    { key: 'departments', path: '/departments' },
     { key: 'about', path: '/about' },
+    { key: 'departments', path: '/departments' },
+    { key: 'programs', path: '/programs' },
     { key: 'news', path: '/news' },
+    { key: 'announcements', path: '/announcements' },
+    { key: 'faculty', path: '/faculty' },
     { key: 'services', path: '/services' },
+    { key: 'events', path: '/events' },
     { key: 'contact', path: '/contact' },
   ];
 
@@ -42,7 +46,7 @@ const Header = () => {
           </div>
 
           {/* روابط التنقل - Desktop */}
-          <nav className="d-none d-lg-flex align-items-center gap-4">
+          <nav className="d-none d-xl-flex align-items-center gap-3 flex-wrap justify-content-center">
             {navItems.map((item) => (
               <NavLink
                 key={item.key}
@@ -61,7 +65,7 @@ const Header = () => {
           </nav>
 
           {/* أزرار Desktop */}
-          <div className="d-none d-lg-flex align-items-center gap-3">
+          <div className="d-none d-xl-flex align-items-center gap-3">
             <Button variant="outlineDark" onClick={toggleLanguage} aria-label="Toggle language">
               <span
                 className="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center"
@@ -81,7 +85,7 @@ const Header = () => {
 
           {/* زرار الهامبرجر - موبايل/تابلت فقط */}
           <button
-            className="btn d-lg-none border-0"
+            className="btn d-xl-none border-0"
             onClick={() => setIsMenuOpen(true)}
             aria-label="Open menu"
           >

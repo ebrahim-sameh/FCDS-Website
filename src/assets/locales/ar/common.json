@@ -1,16 +1,20 @@
 {
   "nav": {
     "home": "الرئيسية",
-    "departments": "الأقسام",
     "about": "عن الكلية",
+    "departments": "الأقسام",
+    "programs": "البرامج",
     "news": "الأخبار",
+    "announcements": "الإعلانات",
+    "faculty": "أعضاء هيئة التدريس",
     "services": "الخدمات",
+    "events": "الفعاليات",
     "contact": "تواصل معنا"
   },
   "college": {
     "name": "الحاسبات وعلوم البيانات",
     "university": "جامعة الإسكندرية",
-    "description": "كلية متخصصة في الحاسبات وعلوم البيانات، وتعد الخريجين لسوق العمل في مصر والمنطقة."
+    "description": "كلية الحاسبات وعلوم البيانات بجامعة الإسكندرية."
   },
   "buttons": {
     "applyNow": "قدّم الآن"
@@ -26,15 +30,18 @@
     "businessAnalytics": "تحليل الأعمال",
     "intelligentSystems": "النظم الذكية",
     "mediaAnalytics": "تحليل الوسائط",
-    "healthInformatics": "معلوماتية الرعاية الصحية",
+    "healthInformatics": "المعلوماتية الصحية",
     "cyberSecurity": "الأمن السيبراني"
   },
   "quickLinks": {
     "title": "روابط سريعة",
-    "admissions": "التقديم والقبول",
     "departments": "الأقسام العلمية",
+    "programs": "البرامج",
     "news": "آخر الأخبار",
+    "announcements": "الإعلانات",
+    "faculty": "أعضاء هيئة التدريس",
     "services": "الخدمات",
+    "events": "الفعاليات",
     "contact": "تواصل معنا"
   },
   "notFound": {

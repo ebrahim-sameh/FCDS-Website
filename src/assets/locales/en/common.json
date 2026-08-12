@@ -1,16 +1,20 @@
 {
   "nav": {
     "home": "Home",
-    "departments": "Departments",
     "about": "About",
+    "departments": "Departments",
+    "programs": "Programs",
     "news": "News",
+    "announcements": "Announcements",
+    "faculty": "Faculty",
     "services": "Services",
+    "events": "Events",
     "contact": "Contact us"
   },
   "college": {
     "name": "Computer & Data Science",
     "university": "Alexandria University",
-    "description": "A faculty focused on computer and data science, training graduates for work in Egypt and the region."
+    "description": "Faculty of Computer and Data Science at Alexandria University."
   },
   "buttons": {
     "applyNow": "Apply now"
@@ -27,14 +31,17 @@
     "intelligentSystems": "Intelligent Systems",
     "mediaAnalytics": "Media Analytics",
     "healthInformatics": "Health Informatics",
-    "cyberSecurity": "Cyber Security"
+    "cyberSecurity": "Cybersecurity"
   },
   "quickLinks": {
     "title": "Quick links",
-    "admissions": "Admissions",
     "departments": "Departments",
+    "programs": "Programs",
     "news": "Latest news",
+    "announcements": "Announcements",
+    "faculty": "Faculty",
     "services": "Services",
+    "events": "Events",
     "contact": "Contact us"
   },
   "notFound": {

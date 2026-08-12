@@ -11,6 +11,13 @@ import DeanMessageSection from './pages/DeanMessage/DeanMessageSection.jsx';
 import Services from './pages/Services/Services.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
+import Departments from './pages/Departments/Departments.jsx';
+import DepartmentDetails from './pages/Departments/DepartmentDetails.jsx';
+import Programs from './pages/Programs/Programs.jsx';
+import Faculty from './pages/Faculty/Faculty.jsx';
+import FacultyDetails from './pages/Faculty/FacultyDetails.jsx';
+import Events from './pages/Events/Events.jsx';
+import Announcements from './pages/Announcements/Announcements.jsx';
 
 function App() {
   useEffect(() => {
@@ -28,9 +35,16 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutSection />} />
           <Route path="/dean-message" element={<DeanMessageSection />} />
+          <Route path="/departments" element={<Departments />} />
+          <Route path="/departments/:key" element={<DepartmentDetails />} />
+          <Route path="/programs" element={<Programs />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:key" element={<NewsDetails />} />
+          <Route path="/announcements" element={<Announcements />} />
+          <Route path="/faculty" element={<Faculty />} />
+          <Route path="/faculty/:key" element={<FacultyDetails />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
