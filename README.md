@@ -43,6 +43,7 @@ npm run preview
 src/
   assets/locales/   # ar and en translation files
   components/       # shared UI and layout
+    ui/             # Button, SectionTitle, SearchBar, FilterSelect, LoadingState, EmptyState, Modal
   data/             # mock data files
   pages/            # Home, News, Services, Contact, NotFound, ...
   i18n.js
