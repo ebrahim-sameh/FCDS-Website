@@ -9,4 +9,24 @@ Check the layout at these viewport widths:
 - 390px (mobile)
 - 360px (small mobile)
 
-Pages worth a quick pass: home, news, contact, and any page with filters or cards.
+## Pages to open
+
+Quick pass on each of these:
+
+- Home
+- About
+- Departments (search for a department name)
+- Programs (search and change the department filter)
+- News (search and filter)
+- Announcements
+- Faculty (search and department filter)
+- Contact (submit empty to see validation)
+- A missing path such as `/does-not-exist` for the 404 page
+
+## Language
+
+Switch Arabic and English on home and on one form-heavy page (contact). Confirm direction flips (`rtl` / `ltr`) and that placeholders and empty states change language.
+
+## Live site notes
+
+On GitHub Pages, routes use hash URLs (`/#/news`, `/#/contact`). After deploy, open a few of those links in a new tab and confirm they load without a blank page.
