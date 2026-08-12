@@ -24,7 +24,6 @@ const Programs = () => {
       return name.includes(q) || summary.includes(q)
     })
   }, [query, dept, t])
-
   return (
     <section className="py-5" style={{ backgroundColor: '#f8f9fb' }}>
       <div className="container-fluid px-4 px-lg-5 py-3">
@@ -33,7 +32,6 @@ const Programs = () => {
           title={t('page.title')}
           subtitle={t('page.description')}
         />
-
         {/* Search + filter */}
         <div className="row g-3 justify-content-center mb-4">
           <div className="col-12 col-md-6 col-lg-5">
@@ -93,5 +91,4 @@ const Programs = () => {
     </section>
   )
 }
-
 export default Programs

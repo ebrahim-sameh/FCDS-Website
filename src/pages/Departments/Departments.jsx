@@ -20,7 +20,6 @@ const Departments = () => {
       return name.includes(q) || desc.includes(q)
     })
   }, [query, t])
-
   return (
     <section className="py-5" style={{ backgroundColor: '#f8f9fb' }}>
       <div className="container-fluid px-4 px-lg-5 py-3">
@@ -29,7 +28,6 @@ const Departments = () => {
           title={t('departmentsSection.title')}
           subtitle={t('departmentsSection.description')}
         />
-
         <div className="row justify-content-center mb-4">
           <div className="col-12 col-md-8 col-lg-5">
             <div className="position-relative">

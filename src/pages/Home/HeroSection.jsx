@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '../../components/ui/Button';
+import { asset } from '../../utils/asset';
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation('home');
@@ -20,7 +21,7 @@ const HeroSection = () => {
         <div
           className="position-absolute top-0 start-0 w-100 h-100"
           style={{
-            backgroundImage: "url('/imgs/Computer and Data Science.jpg')",
+            backgroundImage: `url('${asset('imgs/Computer and Data Science.jpg')}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
