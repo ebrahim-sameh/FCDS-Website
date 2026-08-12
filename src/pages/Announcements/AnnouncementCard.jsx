@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const AnnouncementCard = ({ item }) => {
+const AnnouncementCard = ({ item, onClick }) => {
   const { t, i18n } = useTranslation('announcements');
   const isArabic = i18n.language === 'ar';
 
@@ -12,7 +12,17 @@ const AnnouncementCard = ({ item }) => {
         backgroundColor: '#fff',
         border: '1px solid #e2e8f0',
         transition: 'box-shadow 0.2s ease, transform 0.2s ease',
+        cursor: onClick ? 'pointer' : undefined,
       }}
+      onClick={onClick}
+      onKeyDown={(event) => {
+        if (onClick && (event.key === 'Enter' || event.key === ' ')) {
+          event.preventDefault();
+          onClick();
+        }
+      }}
+      role={onClick ? 'button' : undefined}
+      tabIndex={onClick ? 0 : undefined}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = 'translateY(-4px)';
         e.currentTarget.style.boxShadow = '0 10px 24px rgba(15, 23, 42, 0.08)';
