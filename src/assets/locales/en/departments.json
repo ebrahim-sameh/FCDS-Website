@@ -1,35 +1,80 @@
 {
   "departmentsSection": {
-    "label": "What we study",
-    "title": "Academic departments",
-    "description": "Five specializations aimed at current digital job needs.",
+    "label": "What We Teach",
+    "title": "Academic Departments",
+    "description": "Five specializations aligned with the needs of today's digital job market.",
     "learnMore": "Learn more",
     "allDepartments": "All departments"
+  },
+  "searchPlaceholder": "Search for a department...",
+  "empty": "No matching departments.",
+  "meta": {
+    "students": "students",
+    "courses": "courses",
+    "programs": "programs"
   },
   "departmentsList": {
     "businessAnalytics": {
       "name": "Business Analytics",
-      "description": "Combines data science and business management for decision support work."
+      "description": "Combines data science and business management to support decision-making inside organizations.",
+      "highlights": [
+        "Data science and statistics fundamentals",
+        "Interactive dashboards and reporting",
+        "Business data analysis and decision-making",
+        "Tools such as Power BI, SQL, and Python"
+      ],
+      "careers": ["Data Analyst", "Business Analyst", "BI Specialist", "Decision Consultant"]
     },
     "intelligentSystems": {
       "name": "Intelligent Systems",
-      "description": "Builds systems with machine learning, deep learning, and natural language processing."
+      "description": "Builds systems powered by machine learning, deep learning, and natural language processing.",
+      "highlights": [
+        "Machine learning and deep learning",
+        "Natural language processing and computer vision",
+        "Neural networks and AI models",
+        "Building and deploying intelligent models in apps"
+      ],
+      "careers": ["ML Engineer", "AI Specialist", "Data Scientist", "Computer Vision Developer"]
     },
     "mediaAnalytics": {
       "name": "Media Analytics",
-      "description": "Works with images, video, and audio using current analysis tools."
+      "description": "Analyzes images, video, and audio using modern tools and techniques.",
+      "highlights": [
+        "Image, video, and audio processing",
+        "Digital content analysis and information extraction",
+        "Multimedia techniques and deep learning",
+        "Modern media editing and analysis tools"
+      ],
+      "careers": ["Digital Media Analyst", "Image Processing Specialist", "Interactive Content Developer", "Multimedia Specialist"]
     },
     "healthInformatics": {
-      "name": "Health Informatics",
-      "description": "Connects computing with healthcare systems and medical data."
+      "name": "Healthcare Informatics",
+      "description": "Connects computer science with healthcare systems and medical data management.",
+      "highlights": [
+        "Health information systems and medical records",
+        "Medical and biological data analysis",
+        "Health data security and privacy",
+        "Clinical decision support with digital technologies"
+      ],
+      "careers": ["Health Informatics Specialist", "Medical Data Analyst", "Health Systems Manager", "Digital Health Consultant"]
     },
     "cyberSecurity": {
       "name": "Cybersecurity",
-      "description": "Covers protection of systems, networks, and data."
+      "description": "Covers the protection of systems, networks, and data from threats and attacks.",
+      "highlights": [
+        "Network and systems security",
+        "Cryptography and data protection",
+        "Penetration testing and vulnerability analysis",
+        "Incident response and digital forensics"
+      ],
+      "careers": ["Cybersecurity Analyst", "Penetration Tester", "Network Security Specialist", "Digital Forensics Investigator"]
     }
   },
   "details": {
     "notFound": "Department not found.",
-    "back": "Back to departments"
+    "back": "Back to departments",
+    "highlightsTitle": "What you will learn",
+    "programsTitle": "Programs offered by this department",
+    "careersTitle": "Career opportunities after graduation"
   }
 }
