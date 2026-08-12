@@ -66,6 +66,7 @@ const NewsSection = () => {
                       src={item.image}
                       alt={t(`news.${item.key}.title`)}
                       className="w-100 h-100"
+                      loading="lazy"
                       style={{ objectFit: 'cover' }}
                     />
 

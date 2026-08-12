@@ -33,6 +33,7 @@ const DeanMessageSection = () => {
                 src="/imgs/DrMagdaMadbolyDEAN.jpeg"
                 alt={t('deanMessage.imageAlt')}
                 className="img-fluid w-100"
+                loading="lazy"
                 style={{
                   height: '540px',
                   objectFit: 'cover',
