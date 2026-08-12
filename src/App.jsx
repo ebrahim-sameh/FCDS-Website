@@ -21,7 +21,9 @@ import Announcements from './pages/Announcements/Announcements.jsx';
 function App() {
   useEffect(() => {
     const savedLang = localStorage.getItem('lang') || 'ar';
-    i18n.changeLanguage(savedLang);
+    if (i18n.language !== savedLang) {
+      i18n.changeLanguage(savedLang);
+    }
     document.documentElement.lang = savedLang;
     document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
   }, []);

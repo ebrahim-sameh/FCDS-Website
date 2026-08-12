@@ -1,10 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCDS Alexandria</title>
+    <script>
+      (function () {
+        var lang = 'ar';
+        try {
+          lang = localStorage.getItem('lang') || 'ar';
+        } catch (e) {}
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
