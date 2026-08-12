@@ -1,23 +1,26 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import i18n from './i18n';
 import Header from './components/layout/Header/Header.jsx';
 import Footer from './components/layout/Footer/Footer.jsx';
 import Home from './pages/Home/Home.jsx';
-import News from './pages/News/News.jsx';
-import NewsDetails from './pages/News/NewsDetails.jsx';
-import About from './pages/About/About.jsx';
-import DeanMessageSection from './pages/DeanMessage/DeanMessageSection.jsx';
-import Services from './pages/Services/Services.jsx';
-import Contact from './pages/Contact/Contact.jsx';
-import NotFound from './pages/NotFound/NotFound.jsx';
-import Departments from './pages/Departments/Departments.jsx';
-import DepartmentDetails from './pages/Departments/DepartmentDetails.jsx';
-import Programs from './pages/Programs/Programs.jsx';
-import Faculty from './pages/Faculty/Faculty.jsx';
-import FacultyDetails from './pages/Faculty/FacultyDetails.jsx';
-import Events from './pages/Events/Events.jsx';
-import Announcements from './pages/Announcements/Announcements.jsx';
+import LoadingState from './components/ui/LoadingState.jsx';
+
+const News = lazy(() => import('./pages/News/News.jsx'));
+const NewsDetails = lazy(() => import('./pages/News/NewsDetails.jsx'));
+const About = lazy(() => import('./pages/About/About.jsx'));
+const DeanMessageSection = lazy(() => import('./pages/DeanMessage/DeanMessageSection.jsx'));
+const Services = lazy(() => import('./pages/Services/Services.jsx'));
+const Contact = lazy(() => import('./pages/Contact/Contact.jsx'));
+const NotFound = lazy(() => import('./pages/NotFound/NotFound.jsx'));
+const Departments = lazy(() => import('./pages/Departments/Departments.jsx'));
+const DepartmentDetails = lazy(() => import('./pages/Departments/DepartmentDetails.jsx'));
+const Programs = lazy(() => import('./pages/Programs/Programs.jsx'));
+const Faculty = lazy(() => import('./pages/Faculty/Faculty.jsx'));
+const FacultyDetails = lazy(() => import('./pages/Faculty/FacultyDetails.jsx'));
+const Events = lazy(() => import('./pages/Events/Events.jsx'));
+const Announcements = lazy(() => import('./pages/Announcements/Announcements.jsx'));
+
 function App() {
   useEffect(() => {
     const savedLang = localStorage.getItem('lang') || 'ar';
@@ -32,23 +35,33 @@ function App() {
     <div className="d-flex flex-column min-vh-100">
       <Header />
       <div className="flex-grow-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/dean-message" element={<DeanMessageSection />} />
-          <Route path="/departments" element={<Departments />} />
-          <Route path="/departments/:key" element={<DepartmentDetails />} />
-          <Route path="/programs" element={<Programs />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/news/:key" element={<NewsDetails />} />
-          <Route path="/announcements" element={<Announcements />} />
-          <Route path="/faculty" element={<Faculty />} />
-          <Route path="/faculty/:key" element={<FacultyDetails />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense
+          fallback={
+            <LoadingState
+              message={
+                i18n.language === 'ar' ? 'جاري التحميل...' : 'Loading...'
+              }
+            />
+          }
+        >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/dean-message" element={<DeanMessageSection />} />
+            <Route path="/departments" element={<Departments />} />
+            <Route path="/departments/:key" element={<DepartmentDetails />} />
+            <Route path="/programs" element={<Programs />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/news/:key" element={<NewsDetails />} />
+            <Route path="/announcements" element={<Announcements />} />
+            <Route path="/faculty" element={<Faculty />} />
+            <Route path="/faculty/:key" element={<FacultyDetails />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </div>
       <Footer />
     </div>
