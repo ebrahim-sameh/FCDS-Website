@@ -26,6 +26,8 @@ import eventsAr from './assets/locales/ar/events.json';
 import eventsEn from './assets/locales/en/events.json';
 import announcementsAr from './assets/locales/ar/announcements.json';
 import announcementsEn from './assets/locales/en/announcements.json';
+import admissionsAr from './assets/locales/ar/admissions.json';
+import admissionsEn from './assets/locales/en/admissions.json';
 
 i18n
   .use(LanguageDetector)
@@ -45,6 +47,7 @@ i18n
         faculty: facultyAr,
         events: eventsAr,
         announcements: announcementsAr,
+        admissions: admissionsAr,
       },
       en: {
         common: commonEn,
@@ -59,6 +62,7 @@ i18n
         faculty: facultyEn,
         events: eventsEn,
         announcements: announcementsEn,
+        admissions: admissionsEn,
       },
     },
     fallbackLng: 'ar',

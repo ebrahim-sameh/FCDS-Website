@@ -20,6 +20,7 @@ const Faculty = lazy(() => import('./pages/Faculty/Faculty.jsx'));
 const FacultyDetails = lazy(() => import('./pages/Faculty/FacultyDetails.jsx'));
 const Events = lazy(() => import('./pages/Events/Events.jsx'));
 const Announcements = lazy(() => import('./pages/Announcements/Announcements.jsx'));
+const Admissions = lazy(() => import('./pages/Admissions/Admissions.jsx'));
 
 function App() {
   useEffect(() => {
@@ -55,6 +56,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/events" element={<Events />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/admissions" element={<Admissions />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

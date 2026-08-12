@@ -1,0 +1,38 @@
+{
+  "label": "Admissions",
+  "title": "Apply to the faculty",
+  "subtitle": "Fill in this form to start an undergraduate application. The faculty office will follow up by email or phone.",
+  "infoTitle": "How applications work",
+  "infoText": "This form collects your contact details and the program you want. It does not replace official university admission steps when those open for the year.",
+  "stepsTitle": "What to do",
+  "steps": {
+    "one": "Choose the program you want to study.",
+    "two": "Send your name, email, and phone number.",
+    "three": "Wait for the faculty office to contact you with next steps."
+  },
+  "noteLabel": "Note",
+  "noteText": "For official deadlines and documents, check faculty announcements or contact the office.",
+  "form": {
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone number",
+    "program": "Program",
+    "programPlaceholder": "Select a program",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Anything else the office should know",
+    "submit": "Submit application",
+    "sending": "Sending..."
+  },
+  "validation": {
+    "nameRequired": "Please enter your name.",
+    "nameShort": "Name should be at least 2 characters.",
+    "emailRequired": "Please enter your email.",
+    "emailInvalid": "Enter a valid email address.",
+    "phoneRequired": "Please enter your phone number.",
+    "phoneInvalid": "Enter a valid phone number.",
+    "programRequired": "Please select a program.",
+    "notesShort": "Notes should be at least 10 characters, or leave the field empty."
+  },
+  "success": "Your application was received. The faculty office will contact you soon.",
+  "error": "Something went wrong. Please try again."
+}
