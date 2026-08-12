@@ -27,5 +27,9 @@
       "name": "Cybersecurity",
       "description": "Covers protection of systems, networks, and data."
     }
+  },
+  "details": {
+    "notFound": "Department not found.",
+    "back": "Back to departments"
   }
 }

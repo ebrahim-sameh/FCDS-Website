@@ -1,0 +1,50 @@
+{
+  "page": {
+    "label": "People",
+    "title": "Faculty members",
+    "description": "Academic staff at the Faculty of Computer and Data Science."
+  },
+  "searchPlaceholder": "Search by name or department...",
+  "filterAll": "All departments",
+  "roles": {
+    "dean": "Dean",
+    "professor": "Professor",
+    "associate": "Associate professor",
+    "lecturer": "Lecturer"
+  },
+  "details": {
+    "back": "Back to faculty",
+    "department": "Department",
+    "notFound": "Faculty member not found."
+  },
+  "loading": "Loading faculty...",
+  "empty": "No faculty members match your search.",
+  "error": "Could not load faculty.",
+  "retry": "Try again",
+  "items": {
+    "dean": {
+      "name": "Prof. Dr. Faculty Dean",
+      "bio": "Dean of the Faculty of Computer and Data Science at Alexandria University."
+    },
+    "amrAmin": {
+      "name": "Dr. Amr Amin",
+      "bio": "Works on intelligent systems and applied computing topics."
+    },
+    "reemHassan": {
+      "name": "Dr. Reem Hassan",
+      "bio": "Teaches and researches business analytics and data methods."
+    },
+    "saraMahmoud": {
+      "name": "Dr. Sara Mahmoud",
+      "bio": "Focuses on media analytics and related data applications."
+    },
+    "omarFarouk": {
+      "name": "Dr. Omar Farouk",
+      "bio": "Works on cybersecurity and system protection topics."
+    },
+    "nadaYoussef": {
+      "name": "Dr. Nada Youssef",
+      "bio": "Works on health informatics and healthcare data systems."
+    }
+  }
+}

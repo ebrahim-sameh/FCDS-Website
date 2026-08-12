@@ -1,0 +1,38 @@
+{
+  "page": {
+    "label": "Notice board",
+    "title": "Announcements",
+    "description": "Official notices for students and staff."
+  },
+  "viewAll": "View all announcements",
+  "searchPlaceholder": "Search announcements...",
+  "categories": {
+    "all": "All categories",
+    "academic": "Academic",
+    "exams": "Exams",
+    "services": "Services",
+    "opportunities": "Opportunities"
+  },
+  "loading": "Loading announcements...",
+  "empty": "No announcements match your search.",
+  "error": "Could not load announcements.",
+  "retry": "Try again",
+  "items": {
+    "registrationFall": {
+      "title": "Fall registration opens",
+      "summary": "Course registration for the fall semester is open through student affairs."
+    },
+    "examSchedule": {
+      "title": "Midterm exam schedule published",
+      "summary": "Check the exam timetable on the faculty notice board and student portal."
+    },
+    "labMaintenance": {
+      "title": "Lab maintenance window",
+      "summary": "Selected computer labs will be closed for maintenance this week."
+    },
+    "scholarshipCall": {
+      "title": "Scholarship applications open",
+      "summary": "Eligible students can apply for available faculty-supported scholarships."
+    }
+  }
+}
