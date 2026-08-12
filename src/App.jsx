@@ -37,11 +37,7 @@ function App() {
       <div className="flex-grow-1">
         <Suspense
           fallback={
-            <LoadingState
-              message={
-                i18n.language === 'ar' ? 'جاري التحميل...' : 'Loading...'
-              }
-            />
+            <LoadingState message={i18n.t('states.loading', { ns: 'common' })} />
           }
         >
           <Routes>
