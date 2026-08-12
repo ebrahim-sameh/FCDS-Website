@@ -14,7 +14,7 @@ const HeroSection = () => {
       {/* الخلفية + المحتوى */}
       <div
         className="position-relative d-flex align-items-end"
-        style={{ minHeight: '520px' }}
+        style={{ minHeight: '520px', contain: 'layout paint' }}
       >
 
         {/* صورة الخلفية */}

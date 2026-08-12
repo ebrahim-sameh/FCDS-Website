@@ -32,20 +32,14 @@ const NewsCard = ({ item }) => {
       >
 
         {/* Image */}
-        <div
-          className="position-relative overflow-hidden"
-          style={{
-            height: '245px',
-          }}
-        >
+        <div className="position-relative media-frame">
           <img
             src={item.image}
             alt={t(`news.${item.key}.title`)}
-            className="w-100 h-100"
+            width={640}
+            height={400}
             loading="lazy"
-            style={{
-              objectFit: 'cover',
-            }}
+            decoding="async"
           />
 
           {/* Category */}

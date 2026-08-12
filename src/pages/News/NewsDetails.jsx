@@ -75,6 +75,9 @@ const NewsDetails = () => {
               src={currentNews.image}
               alt={t(`news.${key}.title`)}
               className="w-100 h-100"
+              width={1000}
+              height={500}
+              decoding="async"
               style={{
                 objectFit: 'cover',
               }}
