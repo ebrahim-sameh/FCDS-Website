@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import AboutSection from './AboutSection';
+import { asset } from '../../utils/asset';
+
 const About = () => {
   const { t, i18n } = useTranslation('about');
   const isArabic = i18n.language === 'ar';
@@ -49,9 +51,13 @@ return(
           <div className="row align-items-center g-5">
             <div className={`col-12 col-lg-6 ${isArabic ? 'order-lg-2' : 'order-lg-1'}`}>
               <img
-                src="/imgs/Computer and Data Science.jpg"
+                src={asset('imgs/hero.webp')}
                 alt={t('overview.imageAlt')}
                 className="img-fluid w-100"
+                width={1600}
+                height={900}
+                loading="lazy"
+                decoding="async"
                 style={{ borderRadius: '24px', objectFit: 'cover', maxHeight: '420px', boxShadow: '0 12px 30px rgba(15, 23, 42, 0.12)' }}
               />
             </div>

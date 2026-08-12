@@ -31,7 +31,7 @@ const DeanMessageSection = () => {
               }}
             >
               <img
-                src={asset('imgs/DrMagdaMadbolyDEAN.jpeg')}
+                src={asset('imgs/dean.webp')}
                 alt={t('deanMessage.imageAlt')}
                 className="img-fluid w-100"
                 width={430}
