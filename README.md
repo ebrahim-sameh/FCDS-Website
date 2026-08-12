@@ -76,10 +76,14 @@ src/
   assets/locales/   # ar and en translation files
   components/       # layout and shared UI
   data/             # mock data files
+  hooks/            # small shared hooks
   pages/            # route pages and home sections
   i18n.js
   App.jsx
+docs/               # i18n notes, testing, screenshots, submission
 ```
+
+Submission checklist: [docs/SUBMISSION.md](docs/SUBMISSION.md). Presentation outline: [docs/presentation.md](docs/presentation.md).
 
 ## Routes
 
