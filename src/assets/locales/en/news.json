@@ -1,9 +1,25 @@
 {
   "newsSection": {
-    "label": "Stay Updated",
-    "title": "Latest News",
-    "allNews": "All News"
+    "label": "Stay updated",
+    "title": "Latest news",
+    "allNews": "All news"
   },
+  "page": {
+    "label": "News",
+    "title": "Faculty news",
+    "description": "Updates on events, partnerships, and student activities at the faculty."
+  },
+  "search": {
+    "placeholder": "Search news...",
+    "noResults": "No matching news found",
+    "tryAgain": "Try another search term or change the filter."
+  },
+  "filters": {
+    "all": "All",
+    "news": "News",
+    "events": "Events"
+  },
+  "empty": "No news available",
 
   "news": {
     "types": {
@@ -13,20 +29,44 @@
 
     "graduation": {
       "date": "September 14, 2026",
-      "title": "2026 Graduation Projects Exhibition Impresses the Jury",
-      "description": "The faculty hosted its annual graduation projects exhibition featuring more than 40 projects in artificial intelligence and data science."
+      "title": "2026 graduation projects exhibition",
+      "description": "The faculty hosted its annual graduation projects exhibition with more than 40 projects in artificial intelligence and data science.",
+      "content": "The faculty held its annual graduation projects exhibition for the class of 2026. Students, faculty members, and guest reviewers attended.\n\nMore than 40 projects were shown in artificial intelligence, data science, web and mobile development, the Internet of Things, software engineering, data analytics, and cybersecurity.\n\nTeams presented their work to a review panel and answered questions on design, implementation, and next steps. Judges noted strong technical work in several projects and gave feedback on scalability, security, and usability.\n\nThe faculty said the exhibition lets students present work from their studies in a public setting. Several teams received recognition at the closing session."
     },
 
     "aiWorkshop": {
       "date": "April 2, 2026",
-      "title": "Applied Artificial Intelligence Workshop Series Kicks Off",
-      "description": "The faculty organizes a specialized workshop series on applied artificial intelligence in collaboration with industry experts."
+      "title": "Applied AI workshop series starts",
+      "description": "The faculty is running a workshop series on applied artificial intelligence with industry guests.",
+      "content": "The faculty started a workshop series on applied artificial intelligence with guest instructors from industry.\n\nSessions cover machine learning basics, data preparation, model building, and evaluation. Students work on small exercises using current tools.\n\nTopics include classification, prediction, natural language processing, and computer vision. The series also outlines common job paths in AI and data work.\n\nMore workshops on related subjects are planned later in the year."
     },
 
     "partnership": {
       "date": "March 18, 2026",
-      "title": "Faculty Signs Strategic Partnership with Leading Technology Companies",
-      "description": "The faculty signed a cooperation agreement to provide students with training and employment opportunities and develop curricula according to market needs."
+      "title": "Faculty signs tech partnership agreement",
+      "description": "A cooperation agreement covers student training, hiring paths, and curriculum input from partner companies.",
+      "content": "The faculty signed a cooperation agreement with technology companies covering student training, hiring, and curriculum review.\n\nStudents may train with partner firms during semesters and breaks. Company staff will also give talks on programming, AI, data science, cybersecurity, and cloud computing.\n\nIndustry input will help update course content. Students and staff may join applied projects linked to company needs.\n\nThe faculty said the agreement should expand training and employment options for students and graduates."
+    },
+
+    "studentCompetition": {
+      "date": "February 25, 2026",
+      "title": "Students place well in programming contest",
+      "description": "A faculty team competed against students from several Egyptian universities.",
+      "content": "A faculty student team took part in a programming contest with teams from other Egyptian universities. Each team had limited time to solve a set of problems.\n\nThe team trained on algorithms, data structures, and timed problem solving before the event. During the contest they solved several difficult problems and placed well.\n\nMembers said the event helped them test skills from their coursework under competition conditions. The faculty encourages more students to join programming contests and offers training sessions."
+    },
+
+    "dataScienceConference": {
+      "date": "February 10, 2026",
+      "title": "Data science conference at the faculty",
+      "description": "Researchers and professionals met to discuss recent work in data science and AI.",
+      "content": "The faculty held a conference on data science and artificial intelligence with researchers, staff, and industry speakers.\n\nTalks covered big data, machine learning, data visualization, and data quality. Discussion sessions addressed privacy, security, and data management in organizations.\n\nStudents asked questions about tools used in industry and career options after graduation. Examples from healthcare, education, business, and government were presented.\n\nThe faculty said it will continue similar events during the year."
+    },
+
+    "technologyAgreement": {
+      "date": "January 28, 2026",
+      "title": "New student innovation initiative",
+      "description": "The faculty announced support for students with technical project ideas and early startup work.",
+      "content": "The faculty opened a program to help students turn technical ideas into working projects.\n\nWorkshops cover entrepreneurship, project management, market research, and basic business planning. Students can pitch ideas to reviewers and receive feedback.\n\nThe faculty asks teams to mix programming, design, data, and business skills where possible. Information on incubators, competitions, and funding sources is also provided.\n\nFurther sessions for student founders are planned."
     }
   }
 }

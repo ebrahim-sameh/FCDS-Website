@@ -1,17 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Button from '../../components/ui/Button';
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation('home');
   const isArabic = i18n.language === 'ar';
 
-  const stats = [
-    { key: 'faculty', value: '+50' },
-    { key: 'founded', value: '2021' },
-    { key: 'students', value: '+2000' },
-    { key: 'departments', value: '5' },
-  ];
 
   return (
     <section>
@@ -92,68 +86,16 @@ const HeroSection = () => {
                     : 'justify-content-start'
                 }`}
               >
-                <Link
-                  to="/admissions"
-                  className="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold"
-                >
+                <Button to="/admissions" variant="outline">
                   {t('hero.admissionsBtn')}
-                </Link>
+                </Button>
 
-                <Link
-                  to="/departments"
-                  className="btn btn-warning rounded-pill px-4 py-2 fw-semibold d-flex align-items-center gap-2"
-                >
+                <Button to="/departments" variant="primary" icon={<i className={`bi ${isArabic ? 'bi-arrow-left' : 'bi-arrow-right'}`}></i>}>
                   {t('hero.exploreBtn')}
-
-                  <i
-                    className={`bi ${
-                      isArabic
-                        ? 'bi-arrow-left'
-                        : 'bi-arrow-right'
-                    }`}
-                  ></i>
-                </Link>
+                </Button>
               </div>
 
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* شريط الإحصائيات */}
-      <div
-        style={{ backgroundColor: '#0b1f52' }}
-        className="py-4"
-      >
-        <div className="container-fluid px-4 px-lg-5">
-          <div className="row text-center g-4">
-
-            {stats.map((stat) => (
-              <div
-                key={stat.key}
-                className="col-6 col-lg-3"
-              >
-                <div
-                  className="fw-bold mb-1"
-                  style={{
-                    color: '#f59e0b',
-                    fontSize: '2rem',
-                  }}
-                >
-                  {stat.value}
-                </div>
-
-                <div
-                  style={{
-                    color: '#c3cbe0',
-                    fontSize: '0.9rem',
-                  }}
-                >
-                  {t(`stats.${stat.key}`)}
-                </div>
-              </div>
-            ))}
-
           </div>
         </div>
       </div>

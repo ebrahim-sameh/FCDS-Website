@@ -2,12 +2,12 @@
   "hero": {
     "location": "Alexandria University",
     "title": "Faculty of Computer & Data Science",
-    "description": "We lead the future of technology through pioneering academic programs in data science, artificial intelligence, and cybersecurity.",
+    "description": "Academic programs in data science, artificial intelligence, and cybersecurity for students who want to work in tech.",
     "admissionsBtn": "Admissions",
-    "exploreBtn": "Explore Departments"
+    "exploreBtn": "View departments"
   },
   "stats": {
-    "faculty": "Faculty Members",
+    "faculty": "Faculty members",
     "founded": "Founded",
     "students": "Students",
     "departments": "Departments"

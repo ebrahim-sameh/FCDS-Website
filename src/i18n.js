@@ -14,14 +14,52 @@ import newsAr from './assets/locales/ar/news.json';
 import newsEn from './assets/locales/en/news.json';
 import aboutAr from './assets/locales/ar/about.json';
 import aboutEn from './assets/locales/en/about.json';
+import servicesAr from './assets/locales/ar/services.json';
+import servicesEn from './assets/locales/en/services.json';
+import contactAr from './assets/locales/ar/contact.json';
+import contactEn from './assets/locales/en/contact.json';
+import programsAr from './assets/locales/ar/programs.json';
+import programsEn from './assets/locales/en/programs.json';
+import facultyAr from './assets/locales/ar/faculty.json';
+import facultyEn from './assets/locales/en/faculty.json';
+import eventsAr from './assets/locales/ar/events.json';
+import eventsEn from './assets/locales/en/events.json';
+import announcementsAr from './assets/locales/ar/announcements.json';
+import announcementsEn from './assets/locales/en/announcements.json';
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
-      ar: { common: commonAr, home: homeAr, departments: departmentsAr, deanMessage: deanMessageAr, news: newsAr, about: aboutAr },
-      en: { common: commonEn, home: homeEn, departments: departmentsEn, deanMessage: deanMessageEn, news: newsEn, about: aboutEn },
+      ar: {
+        common: commonAr,
+        home: homeAr,
+        departments: departmentsAr,
+        deanMessage: deanMessageAr,
+        news: newsAr,
+        about: aboutAr,
+        services: servicesAr,
+        contact: contactAr,
+        programs: programsAr,
+        faculty: facultyAr,
+        events: eventsAr,
+        announcements: announcementsAr,
+      },
+      en: {
+        common: commonEn,
+        home: homeEn,
+        departments: departmentsEn,
+        deanMessage: deanMessageEn,
+        news: newsEn,
+        about: aboutEn,
+        services: servicesEn,
+        contact: contactEn,
+        programs: programsEn,
+        faculty: facultyEn,
+        events: eventsEn,
+        announcements: announcementsEn,
+      },
     },
     fallbackLng: 'ar',
     lng: localStorage.getItem('lang') || 'ar',
