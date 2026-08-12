@@ -20,7 +20,7 @@ const StatisticsSection = () => {
         className="py-4"
       >
         <div className="container-fluid px-4 px-lg-5">
-          <div className="row text-center g-4">
+          <div className="row text-center g-4 align-items-start" style={{ minHeight: 96 }}>
 
             {stats.map((stat) => (
               <div
@@ -32,6 +32,8 @@ const StatisticsSection = () => {
                   style={{
                     color: '#f59e0b',
                     fontSize: '2rem',
+                    lineHeight: 1.2,
+                    minHeight: '2.4rem',
                   }}
                 >
                   {stat.value}
@@ -41,6 +43,8 @@ const StatisticsSection = () => {
                   style={{
                     color: '#c3cbe0',
                     fontSize: '0.9rem',
+                    lineHeight: 1.4,
+                    minHeight: '2.8rem',
                   }}
                 >
                   {t(`stats.${stat.key}`)}

@@ -38,7 +38,7 @@ const Footer = () => {
   return (
     <footer style={{ backgroundColor: '#0b1f52' }} className="text-white pt-5">
       <div className="container-fluid px-4 px-lg-5">
-        <div className="row g-4 pb-4">
+        <div className="row g-4 pb-4" style={{ minHeight: 280 }}>
 
           {/* عمود الكلية + الوصف + السوشيال */}
           <div className="col-12 col-lg-3 order-1 order-lg-4">
