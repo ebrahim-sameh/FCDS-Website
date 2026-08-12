@@ -7,10 +7,20 @@
   "degree": {
     "bsc": "Bachelor"
   },
+  "meta": {
+    "creditHours": "credit hours"
+  },
+  "searchPlaceholder": "Search programs...",
+  "filterByDepartment": "Filter by department",
+  "allDepartments": "All departments",
   "viewAll": "View all programs",
   "viewDepartment": "View department",
   "loading": "Loading programs...",
   "empty": "No programs listed right now.",
+  "search": {
+    "noResults": "No programs match your search.",
+    "tryAgain": "Try another keyword or clear the department filter."
+  },
   "error": "Could not load programs.",
   "retry": "Try again",
   "items": {

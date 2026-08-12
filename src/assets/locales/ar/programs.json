@@ -7,10 +7,20 @@
   "degree": {
     "bsc": "بكالوريوس"
   },
+  "meta": {
+    "creditHours": "ساعة معتمدة"
+  },
+  "searchPlaceholder": "ابحث في البرامج...",
+  "filterByDepartment": "تصفية حسب القسم",
+  "allDepartments": "كل الأقسام",
   "viewAll": "عرض كل البرامج",
   "viewDepartment": "عرض القسم",
   "loading": "جاري تحميل البرامج...",
   "empty": "لا توجد برامج معروضة حالياً.",
+  "search": {
+    "noResults": "لا توجد برامج تطابق بحثك.",
+    "tryAgain": "جرّب كلمة أخرى أو ألغِ تصفية القسم."
+  },
   "error": "تعذر تحميل البرامج.",
   "retry": "إعادة المحاولة",
   "items": {
