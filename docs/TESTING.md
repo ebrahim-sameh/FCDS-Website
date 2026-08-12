@@ -21,6 +21,7 @@ Quick pass on each of these:
 - Announcements
 - Faculty (search and department filter)
 - Contact (submit empty to see validation)
+- Admissions (submit empty to see validation; also try the Apply now button and the hero Admissions button)
 - A missing path such as `/does-not-exist` for the 404 page
 
 ## Language

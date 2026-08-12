@@ -22,6 +22,7 @@ Repository: https://github.com/ebrahim-sameh/FCDS-Website
 - Faculty list with search and department filter, plus faculty details
 - Services and events
 - Contact form with validation
+- Admissions application form with validation
 - Language switcher (Arabic / English)
 - Responsive layout and 404 page
 
@@ -109,6 +110,7 @@ Local and hash paths use the same route names:
 - `/services` Services
 - `/events` Events
 - `/contact` Contact
+- `/admissions` Admissions
 
 On GitHub Pages, open them as `/#/about`, `/#/departments`, and so on.
 
