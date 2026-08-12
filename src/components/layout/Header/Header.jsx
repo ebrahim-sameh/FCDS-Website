@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '../../ui/Button';
 import logo from '../../../assets/au-logo.svg';
@@ -37,16 +37,19 @@ const Header = () => {
       <div className="container-fluid px-4">
         <div className="d-flex align-items-center justify-content-between py-2">
 
-          {/* Collage Logo*/}
-          <div className="d-flex align-items-center gap-2">
+          <Link
+            to="/"
+            className="d-flex align-items-center gap-2 text-decoration-none"
+            aria-label={t('nav.home')}
+          >
             <img
               src={logo}
-              alt="Alexandria University Logo"
+              alt=""
               className="header-logo"
               width={150}
               height={50}
             />
-          </div>
+          </Link>
 
           {/* روابط التنقل - Desktop */}
           <nav className="d-none d-xl-flex align-items-center gap-3 flex-wrap justify-content-center">
@@ -81,7 +84,11 @@ const Header = () => {
               </span>
             </Button>
 
-            <Button variant="primary" icon={<i className="bi bi-arrow-up"></i>}>
+            <Button
+              to="/admissions"
+              variant="primary"
+              icon={<i className="bi bi-arrow-up" aria-hidden="true"></i>}
+            >
               {t('buttons.applyNow')}
             </Button>
           </div>
@@ -107,13 +114,20 @@ const Header = () => {
         style={{ visibility: isMenuOpen ? 'visible' : 'hidden' }}
       >
         <div className="offcanvas-header border-bottom">
-          <img
-            src={logo}
-            alt="Alexandria University Logo"
-            className="header-logo-sm"
-            width={120}
-            height={40}
-          />
+          <Link
+            to="/"
+            onClick={closeMenu}
+            className="text-decoration-none"
+            aria-label={t('nav.home')}
+          >
+            <img
+              src={logo}
+              alt=""
+              className="header-logo-sm"
+              width={120}
+              height={40}
+            />
+          </Link>
           <button
             type="button"
             className="btn-close"
@@ -158,9 +172,11 @@ const Header = () => {
             </Button>
 
             <Button
+              to="/admissions"
               variant="primary"
-              icon={<i className="bi bi-arrow-up"></i>}
+              icon={<i className="bi bi-arrow-up" aria-hidden="true"></i>}
               className="justify-content-center"
+              onClick={closeMenu}
             >
               {t('buttons.applyNow')}
             </Button>
