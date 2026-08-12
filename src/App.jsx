@@ -8,6 +8,7 @@ import i18n from './i18n';
 import Header from './components/layout/Header/Header'
 import Footer from './components/layout/Footer/Footer'
 import Home from './pages/Home'
+import About from './pages/About/About'
 
 function App() {
 
@@ -24,8 +25,8 @@ function App() {
       <div className="flex-grow-1">
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/about" element={<About />} />
         </Routes>
       </div>
       <Footer />
