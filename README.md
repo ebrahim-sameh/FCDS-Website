@@ -1,8 +1,11 @@
 # FCDS Website
 
-Faculty of Computer and Data Science site for Alexandria University. Built with React and Vite. Arabic and English use i18n, with RTL and LTR switching.
+## Overview
 
-Content is based on the official faculty site:
+This is a front-end site for the Faculty of Computer and Data Science at Alexandria University. It is built with React and Vite and supports Arabic and English through i18n, with RTL and LTR layout switching.
+
+Text and structure follow the official faculty websites:
+
 - https://fcds.alexu.edu.eg/index.php/en/
 - https://fcds.alexu.edu.eg/index.php/ar/
 
@@ -11,9 +14,9 @@ Content is based on the official faculty site:
 - Home page with hero, stats, quick links, departments, programs, news, announcements, services, and events
 - Departments list and department details
 - Programs page
-- News list with search/filter and news details
-- Announcements with search/filter
-- Faculty list with search/filter and faculty details
+- News list with search and filter, plus news details
+- Announcements with search and filter
+- Faculty list with search and filter, plus faculty details
 - Services page
 - Events page
 - Contact form with validation
@@ -28,7 +31,7 @@ Content is based on the official faculty site:
 - Bootstrap 5 and Bootstrap Icons
 - i18next / react-i18next
 
-## Setup
+## Installation
 
 ```bash
 npm install
@@ -43,6 +46,26 @@ Open http://localhost:5173.
 npm run build
 npm run preview
 ```
+
+## Screenshots
+
+Screenshots were taken in English (`localStorage.lang = en`) from a production preview build.
+
+### Home (desktop)
+
+![Home page on desktop](docs/screenshots/home-desktop.png)
+
+### Home (mobile)
+
+![Home page on mobile](docs/screenshots/home-mobile.png)
+
+### News
+
+![News page](docs/screenshots/news.png)
+
+### Contact
+
+![Contact page](docs/screenshots/contact.png)
 
 ## Project structure
 
