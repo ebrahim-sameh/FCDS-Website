@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '../../ui/Button';
-import { asset } from '../../../utils/asset';
+import logo from '../../../assets/au-logo.svg';
 
 const Header = () => {
   const { t, i18n } = useTranslation('common');
@@ -40,7 +40,7 @@ const Header = () => {
           {/* Collage Logo*/}
           <div className="d-flex align-items-center gap-2">
             <img
-              src={asset('imgs/au-logo.svg')}
+              src={logo}
               alt="Alexandria University Logo"
               style={{ width: 150, height: 50 }}
             />
@@ -106,7 +106,7 @@ const Header = () => {
       >
         <div className="offcanvas-header border-bottom">
           <img
-            src={asset('imgs/au-logo.svg')}
+            src={logo}
             alt="Alexandria University Logo"
             style={{ width: 120, height: 40 }}
           />
