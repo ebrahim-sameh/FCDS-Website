@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import newsList from '../../data/news';
 
 const NewsDetails = () => {
   const { key } = useParams();
@@ -8,39 +9,7 @@ const NewsDetails = () => {
 
   const isArabic = i18n.language === 'ar';
 
-  const news = {
-    graduation: {
-      image: '/imgs/news-1.png',
-      type: 'event',
-    },
-
-    aiWorkshop: {
-      image: '/imgs/news-2.png',
-      type: 'event',
-    },
-
-    partnership: {
-      image: '/imgs/news-3.png',
-      type: 'news',
-    },
-
-    studentCompetition: {
-      image: '/imgs/news-4.png',
-      type: 'event',
-    },
-
-    dataScienceConference: {
-      image: '/imgs/news-5.png',
-      type: 'event',
-    },
-
-    technologyAgreement: {
-      image: '/imgs/news-6.png',
-      type: 'news',
-    },
-  };
-
-  const currentNews = news[key];
+  const currentNews = newsList.find((item) => item.key === key);
 
   if (!currentNews) {
     return (
