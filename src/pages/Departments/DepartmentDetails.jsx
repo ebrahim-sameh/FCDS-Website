@@ -29,23 +29,18 @@ const DepartmentDetails = () => {
       </section>
     );
   }
-
-  // مفاتيح النقاط اللي بيتعلمها الطالب والوظائف (بتيجي من الترجمة كمصفوفة)
   const highlights = t(`departmentsList.${key}.highlights`, { returnObjects: true });
   const careers = t(`departmentsList.${key}.careers`, { returnObjects: true });
 
   return (
     <section className="py-5 bg-white">
       <div className="container py-4">
-        {/* رجوع */}
         <div className={`mb-4 ${align}`}>
           <Link to="/departments" className="text-decoration-none fw-semibold" style={{ color: '#2563eb' }}>
             <i className={`bi ${isArabic ? 'bi-arrow-right' : 'bi-arrow-left'} me-2`} aria-hidden="true" />
             {t('departmentsSection.allDepartments')}
           </Link>
         </div>
-
-        {/* الهيدر */}
         <div className={`d-flex align-items-center gap-3 mb-4 ${isArabic ? 'flex-row-reverse' : ''}`}>
           <div
             className="d-flex align-items-center justify-content-center flex-shrink-0"
@@ -57,13 +52,9 @@ const DepartmentDetails = () => {
             {t(`departmentsList.${key}.name`)}
           </h1>
         </div>
-
-        {/* الوصف */}
         <p className={`mb-4 ${align}`} style={{ color: '#64748b', fontSize: '1.1rem', lineHeight: 2 }}>
           {t(`departmentsList.${key}.description`)}
         </p>
-
-        {/* الإحصائيات */}
         <div className="row g-3 mb-5">
           {[
             { value: item.students, label: t('meta.students') },
@@ -78,8 +69,6 @@ const DepartmentDetails = () => {
             </div>
           ))}
         </div>
-
-        {/* ماذا ستتعلم */}
         {Array.isArray(highlights) && highlights.length > 0 && (
           <div className="mb-5">
             <h2 className={`fw-bold mb-3 ${align}`} style={{ color: '#0b1f52', fontSize: '1.4rem' }}>
@@ -97,8 +86,6 @@ const DepartmentDetails = () => {
             </div>
           </div>
         )}
-
-        {/* البرامج التابعة للقسم */}
         {relatedPrograms.length > 0 && (
           <div className="mb-5">
             <h2 className={`fw-bold mb-4 ${align}`} style={{ color: '#0b1f52', fontSize: '1.4rem' }}>
@@ -113,8 +100,6 @@ const DepartmentDetails = () => {
             </div>
           </div>
         )}
-
-        {/* الفرص الوظيفية */}
         {Array.isArray(careers) && careers.length > 0 && (
           <div className="p-4 rounded-4" style={{ backgroundColor: '#0b1f52' }}>
             <h2 className={`fw-bold mb-3 ${align}`} style={{ color: '#fff', fontSize: '1.4rem' }}>
@@ -137,5 +122,4 @@ const DepartmentDetails = () => {
     </section>
   );
 };
-
 export default DepartmentDetails;

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
+import { asset } from '../../utils/asset';
 
 const DeanMessageSection = () => {
   const { t, i18n } = useTranslation('deanMessage');
@@ -30,7 +31,7 @@ const DeanMessageSection = () => {
               }}
             >
               <img
-                src="/imgs/DrMagdaMadbolyDEAN.jpeg"
+                src={asset('imgs/DrMagdaMadbolyDEAN.jpeg')}
                 alt={t('deanMessage.imageAlt')}
                 className="img-fluid w-100"
                 loading="lazy"

@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next'
 const DepartmentCard = ({ item }) => {
   const { t, i18n } = useTranslation('departments')
   const isArabic = i18n.language === 'ar'
-
   return (
     <Link to={`/departments/${item.key}`} className="text-decoration-none text-dark">
       <article
@@ -34,7 +33,6 @@ const DepartmentCard = ({ item }) => {
         <h3 className="fw-bold mb-2" style={{ color: '#0b1f52', fontSize: '1.15rem' }}>
           {t(`departmentsList.${item.key}.name`)}
         </h3>
-
         <p className="mb-3 flex-grow-1" style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.7 }}>
           {t(`departmentsList.${item.key}.description`)}
         </p>
@@ -49,7 +47,6 @@ const DepartmentCard = ({ item }) => {
             {item.courses} {t('meta.courses')}
           </span>
         </div>
-
         <span className="fw-semibold" style={{ color: '#2563eb', fontSize: '0.9rem' }}>
           {t('departmentsSection.learnMore')}
           <i className={`bi ${isArabic ? 'bi-arrow-left' : 'bi-arrow-right'} ms-2`} aria-hidden="true" />

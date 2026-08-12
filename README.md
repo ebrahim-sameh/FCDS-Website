@@ -47,6 +47,15 @@ npm run build
 npm run preview
 ```
 
+<<<<<<< HEAD
+=======
+## Live demo (GitHub Pages)
+
+https://ebrahim-sameh.github.io/FCDS-Website/
+
+A GitHub Actions workflow deploys `main` to Pages. Production builds use the `/FCDS-Website/` base path so assets and routes work on the project site.
+
+>>>>>>> origin/main
 ## Screenshots
 
 Screenshots were taken in English (`localStorage.lang = en`) from a production preview build.
@@ -80,11 +89,17 @@ src/
   pages/            # route pages and home sections
   i18n.js
   App.jsx
+<<<<<<< HEAD
 docs/               # i18n notes, testing, screenshots, submission
 ```
 
 Submission checklist: [docs/SUBMISSION.md](docs/SUBMISSION.md). Presentation outline: [docs/presentation.md](docs/presentation.md).
 
+=======
+docs/               # i18n notes, testing, screenshots
+```
+
+>>>>>>> origin/main
 ## Routes
 
 - `/` Home
