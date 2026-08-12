@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import AboutSection from './AboutSection';
 import { asset } from '../../utils/asset';
 
 const About = () => {
@@ -155,8 +154,7 @@ return(
             ))}
           </div>
         </div>
-        </section> 
-        <AboutSection />
+        </section>
     </div>
 );
 };
