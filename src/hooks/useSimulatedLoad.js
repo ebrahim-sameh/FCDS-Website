@@ -5,12 +5,13 @@ const useSimulatedLoad = (dataGetter) => {
   const [data, setData] = useState(null);
   const [attempt, setAttempt] = useState(0);
 
-  const retry = useCallback(() => setAttempt((n) => n + 1), []);
-
-  useEffect(() => {
+  const retry = useCallback(() => {
     setStatus('loading');
     setData(null);
+    setAttempt((n) => n + 1);
+  }, []);
 
+  useEffect(() => {
     const timer = setTimeout(() => {
       try {
         const result = dataGetter();
