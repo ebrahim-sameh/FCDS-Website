@@ -28,7 +28,11 @@ const QuickLinks = () => {
               className="d-flex flex-column align-items-center text-center p-4 rounded-4 text-decoration-none h-100"
               style={{ backgroundColor: '#f8f9fb', color: '#0b1f52', transition: 'all .2s' }}
             >
-              <i className={`bi ${link.icon} mb-3`} style={{ fontSize: '2rem', color: '#f59e0b' }}></i>
+              <i
+                className={`bi ${link.icon} mb-3 quick-link-icon`}
+                style={{ color: '#f59e0b' }}
+                aria-hidden="true"
+              ></i>
               <span className="fw-semibold">{t(`quickLinks.${link.key}`)}</span>
             </Link>
           </div>

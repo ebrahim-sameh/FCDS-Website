@@ -42,7 +42,9 @@ const Header = () => {
             <img
               src={logo}
               alt="Alexandria University Logo"
-              style={{ width: 150, height: 50 }}
+              className="header-logo"
+              width={150}
+              height={50}
             />
           </div>
 
@@ -108,7 +110,9 @@ const Header = () => {
           <img
             src={logo}
             alt="Alexandria University Logo"
-            style={{ width: 120, height: 40 }}
+            className="header-logo-sm"
+            width={120}
+            height={40}
           />
           <button
             type="button"
