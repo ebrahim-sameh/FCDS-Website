@@ -7,7 +7,11 @@
     "allDepartments": "All departments"
   },
   "searchPlaceholder": "Search for a department...",
-  "empty": "No matching departments.",
+  "empty": "No departments listed right now.",
+  "search": {
+    "noResults": "No departments match your search.",
+    "tryAgain": "Try another keyword or clear the search."
+  },
   "meta": {
     "students": "students",
     "courses": "courses",
