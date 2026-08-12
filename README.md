@@ -47,6 +47,15 @@ npm run build
 npm run preview
 ```
 
+## Live demo (GitHub Pages)
+
+A GitHub Actions workflow deploys `main` to GitHub Pages.
+
+- Demo on this fork (when Pages is enabled): https://ebrahim-sameh.github.io/FCDS-Website/
+- Team repo: https://AhmedALHadiwi.github.io/FCDS-Website/ (after the owner turns on Pages: Settings → Pages → Source → GitHub Actions)
+
+Production builds use the `/FCDS-Website/` base path so assets and routes work on project Pages.
+
 ## Screenshots
 
 Screenshots were taken in English (`localStorage.lang = en`) from a production preview build.
