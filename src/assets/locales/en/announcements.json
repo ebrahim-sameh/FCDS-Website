@@ -4,6 +4,7 @@
     "title": "Announcements",
     "description": "Official notices for students and staff."
   },
+  "viewAll": "View all announcements",
   "searchPlaceholder": "Search announcements...",
   "categories": {
     "all": "All categories",

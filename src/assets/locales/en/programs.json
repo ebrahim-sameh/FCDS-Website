@@ -7,6 +7,7 @@
   "degree": {
     "bsc": "Bachelor"
   },
+  "viewAll": "View all programs",
   "viewDepartment": "View department",
   "loading": "Loading programs...",
   "empty": "No programs listed right now.",

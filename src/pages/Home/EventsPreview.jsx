@@ -6,8 +6,7 @@ import EventCard from '../Events/EventCard';
 import events from '../../data/events';
 
 const EventsPreview = () => {
-  const { t, i18n } = useTranslation('events');
-  const isArabic = i18n.language === 'ar';
+  const { t } = useTranslation('events');
   const preview = events.slice(0, 3);
 
   return (
@@ -29,7 +28,7 @@ const EventsPreview = () => {
 
         <div className="text-center">
           <Button to="/events" variant="primary">
-            {isArabic ? 'عرض كل الفعاليات' : 'View all events'}
+            {t('viewAll')}
           </Button>
         </div>
       </div>

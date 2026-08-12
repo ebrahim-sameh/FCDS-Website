@@ -6,8 +6,7 @@ import ProgramCard from '../Programs/ProgramCard';
 import programs from '../../data/programs';
 
 const ProgramsPreview = () => {
-  const { t, i18n } = useTranslation('programs');
-  const isArabic = i18n.language === 'ar';
+  const { t } = useTranslation('programs');
   const preview = programs.slice(0, 3);
 
   return (
@@ -29,7 +28,7 @@ const ProgramsPreview = () => {
 
         <div className="text-center">
           <Button to="/programs" variant="primary">
-            {isArabic ? 'عرض كل البرامج' : 'View all programs'}
+            {t('viewAll')}
           </Button>
         </div>
       </div>
