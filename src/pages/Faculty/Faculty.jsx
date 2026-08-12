@@ -1,18 +1,24 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
 import SearchBar from '../../components/ui/SearchBar';
 import FilterSelect from '../../components/ui/FilterSelect';
 import EmptyState from '../../components/ui/EmptyState';
+import LoadingState from '../../components/ui/LoadingState';
+import ErrorState from '../../components/ui/ErrorState';
+import useSimulatedLoad from '../../hooks/useSimulatedLoad';
 import FacultyCard from './FacultyCard';
 import faculty from '../../data/faculty';
 import departments from '../../data/departments';
 
 const Faculty = () => {
-  const { t } = useTranslation(['faculty', 'departments']);
+  const { t } = useTranslation(['faculty', 'departments', 'common']);
 
   const [search, setSearch] = useState('');
   const [departmentFilter, setDepartmentFilter] = useState('all');
+
+  const loadFaculty = useCallback(() => faculty, []);
+  const { status, data, retry } = useSimulatedLoad(loadFaculty);
 
   const filterOptions = useMemo(
     () => [
@@ -26,9 +32,11 @@ const Faculty = () => {
   );
 
   const filteredFaculty = useMemo(() => {
+    if (!data) return [];
+
     const searchText = search.toLowerCase();
 
-    return faculty.filter((item) => {
+    return data.filter((item) => {
       const matchesDepartment =
         departmentFilter === 'all' || item.department === departmentFilter;
 
@@ -43,7 +51,7 @@ const Faculty = () => {
 
       return matchesDepartment && matchesSearch;
     });
-  }, [departmentFilter, search, t]);
+  }, [data, departmentFilter, search, t]);
 
   return (
     <section className="py-5" style={{ backgroundColor: '#f8f9fb' }}>
@@ -71,16 +79,30 @@ const Faculty = () => {
           </div>
         </div>
 
-        {filteredFaculty.length > 0 ? (
-          <div className="row g-4">
-            {filteredFaculty.map((item) => (
-              <div key={item.key} className="col-12 col-md-6 col-lg-4">
-                <FacultyCard item={item} />
-              </div>
-            ))}
-          </div>
-        ) : (
-          <EmptyState title={t('empty')} icon="bi-search" />
+        {status === 'loading' && (
+          <LoadingState message={t('states.loading', { ns: 'common' })} />
+        )}
+
+        {status === 'error' && (
+          <ErrorState
+            message={t('states.error', { ns: 'common' })}
+            onRetry={retry}
+            retryLabel={t('states.retry', { ns: 'common' })}
+          />
+        )}
+
+        {status === 'ready' && (
+          filteredFaculty.length > 0 ? (
+            <div className="row g-4">
+              {filteredFaculty.map((item) => (
+                <div key={item.key} className="col-12 col-md-6 col-lg-4">
+                  <FacultyCard item={item} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <EmptyState title={t('empty')} icon="bi-search" />
+          )
         )}
       </div>
     </section>

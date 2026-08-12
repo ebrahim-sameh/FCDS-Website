@@ -47,5 +47,10 @@
   "notFound": {
     "message": "This page was not found.",
     "backHome": "Back to home"
+  },
+  "states": {
+    "loading": "Loading data",
+    "error": "An error occurred while loading the data",
+    "retry": "Retry"
   }
 }
