@@ -1,14 +1,20 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../../components/ui/SectionTitle';
 import FilterSelect from '../../components/ui/FilterSelect';
 import EmptyState from '../../components/ui/EmptyState';
+import LoadingState from '../../components/ui/LoadingState';
+import ErrorState from '../../components/ui/ErrorState';
+import useSimulatedLoad from '../../hooks/useSimulatedLoad';
 import EventCard from './EventCard';
 import events from '../../data/events';
 
 const Events = () => {
-  const { t } = useTranslation('events');
+  const { t } = useTranslation(['events', 'common']);
   const [typeFilter, setTypeFilter] = useState('all');
+
+  const loadEvents = useCallback(() => events, []);
+  const { status, data, retry } = useSimulatedLoad(loadEvents);
 
   const filterOptions = useMemo(
     () => [
@@ -21,10 +27,12 @@ const Events = () => {
   );
 
   const filteredEvents = useMemo(() => {
-    return events.filter(
+    if (!data) return [];
+
+    return data.filter(
       (item) => typeFilter === 'all' || item.type === typeFilter
     );
-  }, [typeFilter]);
+  }, [data, typeFilter]);
 
   return (
     <section className="py-5" style={{ backgroundColor: '#f8f9fb' }}>
@@ -45,16 +53,30 @@ const Events = () => {
           </div>
         </div>
 
-        {filteredEvents.length > 0 ? (
-          <div className="row g-4">
-            {filteredEvents.map((item) => (
-              <div key={item.key} className="col-12 col-md-6 col-lg-4">
-                <EventCard item={item} />
-              </div>
-            ))}
-          </div>
-        ) : (
-          <EmptyState title={t('empty')} icon="bi-calendar-x" />
+        {status === 'loading' && (
+          <LoadingState message={t('states.loading', { ns: 'common' })} />
+        )}
+
+        {status === 'error' && (
+          <ErrorState
+            message={t('states.error', { ns: 'common' })}
+            onRetry={retry}
+            retryLabel={t('states.retry', { ns: 'common' })}
+          />
+        )}
+
+        {status === 'ready' && (
+          filteredEvents.length > 0 ? (
+            <div className="row g-4">
+              {filteredEvents.map((item) => (
+                <div key={item.key} className="col-12 col-md-6 col-lg-4">
+                  <EventCard item={item} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <EmptyState title={t('empty')} icon="bi-calendar-x" />
+          )
         )}
       </div>
     </section>

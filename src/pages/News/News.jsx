@@ -1,19 +1,28 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import NewsCard from './NewsCard';
+import SearchBar from '../../components/ui/SearchBar';
+import EmptyState from '../../components/ui/EmptyState';
+import LoadingState from '../../components/ui/LoadingState';
+import ErrorState from '../../components/ui/ErrorState';
+import useSimulatedLoad from '../../hooks/useSimulatedLoad';
 import news from '../../data/news';
 
 const News = () => {
-  const { t, i18n } = useTranslation('news');
-
+  const { t, i18n } = useTranslation(['news', 'common']);
   const isArabic = i18n.language === 'ar';
 
   const [activeFilter, setActiveFilter] = useState('all');
   const [search, setSearch] = useState('');
 
+  const loadNews = useCallback(() => news, []);
+  const { status, data, retry } = useSimulatedLoad(loadNews);
+
   const filteredNews = useMemo(() => {
-    return news.filter((item) => {
+    if (!data) return [];
+
+    return data.filter((item) => {
       const matchesFilter =
         activeFilter === 'all' ||
         item.type === activeFilter;
@@ -31,12 +40,19 @@ const News = () => {
 
       return matchesFilter && matchesSearch;
     });
-  }, [activeFilter, search, t]);
+  }, [activeFilter, data, search, t]);
+
+  const emptyMessage =
+    search || activeFilter !== 'all'
+      ? t('search.noResults')
+      : t('empty');
+
+  const emptyDescription =
+    search || activeFilter !== 'all' ? t('search.tryAgain') : undefined;
 
   return (
     <main className="bg-white">
 
-      {/* Page Header */}
       <section className="container py-5">
 
         <div
@@ -76,48 +92,19 @@ const News = () => {
       </section>
 
 
-      {/* Filters + Search */}
       <section className="container pb-4">
 
         <div className="row g-3 align-items-center">
 
-          {/* Search */}
           <div className="col-12 col-md-6">
-            <div className="position-relative">
-
-              <i
-                className="bi bi-search position-absolute"
-                style={{
-                  left: isArabic ? 'auto' : '18px',
-                  right: isArabic ? '18px' : 'auto',
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  color: '#64748b',
-                }}
-              ></i>
-
-              <input
-                type="text"
-                value={search}
-                onChange={(e) =>
-                  setSearch(e.target.value)
-                }
-                placeholder={t('search.placeholder')}
-                className={`form-control ${
-                  isArabic ? 'text-end pe-5' : 'ps-5'
-                }`}
-                style={{
-                  height: '50px',
-                  borderRadius: '25px',
-                  border: '1px solid #e2e8f0',
-                }}
-              />
-
-            </div>
+            <SearchBar
+              value={search}
+              onChange={setSearch}
+              placeholder={t('search.placeholder')}
+            />
           </div>
 
 
-          {/* Filters */}
           <div
             className={`col-12 col-md-6 d-flex gap-2 ${
               isArabic
@@ -187,48 +174,39 @@ const News = () => {
       </section>
 
 
-      {/* News Cards */}
       <section className="container pb-5">
 
-        {filteredNews.length > 0 ? (
+        {status === 'loading' && (
+          <LoadingState message={t('states.loading', { ns: 'common' })} />
+        )}
 
-          <div className="row g-4">
+        {status === 'error' && (
+          <ErrorState
+            message={t('states.error', { ns: 'common' })}
+            onRetry={retry}
+            retryLabel={t('states.retry', { ns: 'common' })}
+          />
+        )}
 
-            {filteredNews.map((item) => (
-              <div
-                key={item.key}
-                className="col-12 col-md-6 col-lg-4"
-              >
-                <NewsCard item={item} />
-              </div>
-            ))}
-
-          </div>
-
-        ) : (
-
-          <div
-            className="text-center py-5"
-            style={{
-              color: '#64748b',
-            }}
-          >
-            <i
-              className="bi bi-search"
-              style={{
-                fontSize: '3rem',
-              }}
-            ></i>
-
-            <h4 className="mt-3">
-              {t('search.noResults')}
-            </h4>
-
-            <p>
-              {t('search.tryAgain')}
-            </p>
-          </div>
-
+        {status === 'ready' && (
+          filteredNews.length > 0 ? (
+            <div className="row g-4">
+              {filteredNews.map((item) => (
+                <div
+                  key={item.key}
+                  className="col-12 col-md-6 col-lg-4"
+                >
+                  <NewsCard item={item} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <EmptyState
+              title={emptyMessage}
+              description={emptyDescription}
+              icon="bi-search"
+            />
+          )
         )}
 
       </section>
