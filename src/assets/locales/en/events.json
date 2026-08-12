@@ -4,6 +4,7 @@
     "title": "Events",
     "description": "Upcoming academic and student events at the faculty."
   },
+  "viewAll": "View all events",
   "types": {
     "all": "All types",
     "academic": "Academic",

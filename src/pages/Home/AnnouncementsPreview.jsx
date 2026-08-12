@@ -6,8 +6,7 @@ import AnnouncementCard from '../Announcements/AnnouncementCard';
 import announcements from '../../data/announcements';
 
 const AnnouncementsPreview = () => {
-  const { t, i18n } = useTranslation('announcements');
-  const isArabic = i18n.language === 'ar';
+  const { t } = useTranslation('announcements');
   const preview = announcements.slice(0, 3);
 
   return (
@@ -29,7 +28,7 @@ const AnnouncementsPreview = () => {
 
         <div className="text-center">
           <Button to="/announcements" variant="primary">
-            {isArabic ? 'عرض كل الإعلانات' : 'View all announcements'}
+            {t('viewAll')}
           </Button>
         </div>
       </div>
