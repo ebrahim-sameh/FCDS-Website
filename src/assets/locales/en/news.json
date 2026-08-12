@@ -19,6 +19,7 @@
     "news": "News",
     "events": "Events"
   },
+  "empty": "No news available",
 
   "news": {
     "types": {
