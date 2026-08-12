@@ -1,0 +1,38 @@
+{
+  "page": {
+    "label": "Study",
+    "title": "Academic programs",
+    "description": "Undergraduate programs offered by the Faculty of Computer and Data Science."
+  },
+  "degree": {
+    "bsc": "Bachelor"
+  },
+  "viewAll": "View all programs",
+  "viewDepartment": "View department",
+  "loading": "Loading programs...",
+  "empty": "No programs listed right now.",
+  "error": "Could not load programs.",
+  "retry": "Try again",
+  "items": {
+    "businessAnalytics": {
+      "name": "Computing and Data Sciences - Business Analytics",
+      "summary": "Work with business data and support planning and decisions."
+    },
+    "intelligentSystems": {
+      "name": "Intelligent Systems",
+      "summary": "Build and study smart systems and machine learning applications."
+    },
+    "mediaAnalytics": {
+      "name": "Media Analytics",
+      "summary": "Analyze digital media and related content data."
+    },
+    "healthInformatics": {
+      "name": "Healthcare Informatics and Data Analytics",
+      "summary": "Apply data methods in healthcare settings and systems."
+    },
+    "cyberSecurity": {
+      "name": "Cybersecurity",
+      "summary": "Learn methods used to protect systems, networks, and data."
+    }
+  }
+}

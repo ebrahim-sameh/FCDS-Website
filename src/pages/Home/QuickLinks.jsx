@@ -5,8 +5,12 @@ import SectionTitle from '../../components/ui/SectionTitle';
 
 const links = [
   { key: 'departments', icon: 'bi-diagram-3', path: '/departments' },
+  { key: 'programs', icon: 'bi-journal-text', path: '/programs' },
   { key: 'news', icon: 'bi-newspaper', path: '/news' },
+  { key: 'announcements', icon: 'bi-megaphone', path: '/announcements' },
+  { key: 'faculty', icon: 'bi-people', path: '/faculty' },
   { key: 'services', icon: 'bi-grid', path: '/services' },
+  { key: 'events', icon: 'bi-calendar-event', path: '/events' },
   { key: 'contact', icon: 'bi-headset', path: '/contact' },
 ];
 
@@ -18,7 +22,7 @@ const QuickLinks = () => {
       <SectionTitle title={t('quickLinks.title')} />
       <div className="row g-4">
         {links.map((link) => (
-          <div key={link.key} className="col-6 col-lg-3">
+          <div key={link.key} className="col-6 col-md-4 col-lg-3">
             <Link
               to={link.path}
               className="d-flex flex-column align-items-center text-center p-4 rounded-4 text-decoration-none h-100"

@@ -18,6 +18,14 @@ import servicesAr from './assets/locales/ar/services.json';
 import servicesEn from './assets/locales/en/services.json';
 import contactAr from './assets/locales/ar/contact.json';
 import contactEn from './assets/locales/en/contact.json';
+import programsAr from './assets/locales/ar/programs.json';
+import programsEn from './assets/locales/en/programs.json';
+import facultyAr from './assets/locales/ar/faculty.json';
+import facultyEn from './assets/locales/en/faculty.json';
+import eventsAr from './assets/locales/ar/events.json';
+import eventsEn from './assets/locales/en/events.json';
+import announcementsAr from './assets/locales/ar/announcements.json';
+import announcementsEn from './assets/locales/en/announcements.json';
 
 i18n
   .use(LanguageDetector)
@@ -33,6 +41,10 @@ i18n
         about: aboutAr,
         services: servicesAr,
         contact: contactAr,
+        programs: programsAr,
+        faculty: facultyAr,
+        events: eventsAr,
+        announcements: announcementsAr,
       },
       en: {
         common: commonEn,
@@ -43,6 +55,10 @@ i18n
         about: aboutEn,
         services: servicesEn,
         contact: contactEn,
+        programs: programsEn,
+        faculty: facultyEn,
+        events: eventsEn,
+        announcements: announcementsEn,
       },
     },
     fallbackLng: 'ar',
